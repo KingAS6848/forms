@@ -1,0 +1,86 @@
+body{
+    font-family: 'open sans', Arial, Helvetica, sans-serif;
+
+}
+.header{
+    font: inherit;
+    margin-top: 65px;
+    text-align: center;
+    font-size: 36px;
+}
+#subheader{
+    margin-top: -3px;
+    margin-left: -11px;
+    font-size: small;
+}
+.thick{
+    margin-top: -16px;
+    height: 5px;
+    background-color: black;
+}
+#part{
+    opacity: 0%;
+}
+em{
+    font-style: normal;
+}
+.name{
+    margin-top: 56px;
+    margin-left: 83px;
+}
+.important{
+    color: red !important;
+}
+.input{
+    display: inline-flex;
+    margin-left: 20%;
+}
+.input_name{
+    height: 22px;
+    border-radius: 5px;
+    width: 116px;
+}
+.last{
+    font-size: 12px;
+    margin-left: 121px;
+    opacity: 70%;
+}
+.first{
+    font-size: 12px;
+    margin-left: 0px;
+    opacity: 70%;
+}
+.wemail{
+    margin-top: 44px;
+    margin-left: -287px;
+}
+.input_email{
+    margin-left: 230px;
+    margin-top: -5px;
+    height: 22px;
+    border-radius: 5px;
+}
+.input_phone{
+    margin-left: 234px;
+    margin-top: 29px;
+    height: 22px;
+    border-radius: 5px;
+}
+
+#id_reason{
+    margin-top: 6%;
+    margin-left: 284px;
+    border-radius: 5px;
+
+}
+.treason{
+   margin-top: -15%;
+
+}
+.submit{
+    color: #fff;
+    margin-left: 317px;
+    margin-top: 105px;
+    border: 1px solid red;
+    background-color: red;
+}
