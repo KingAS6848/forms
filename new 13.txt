@@ -1,0 +1,16 @@
+.hero{	
+	height: 753px !important;
+    background-size: cover !important;
+    background-position: center;
+    width: 100vw !important;
+    margin-left: -50vw;
+    left: 50%;
+    position: relative !important;
+    max-height: 753px !important;
+	}
+@media(max-width: 769px){
+      .hero{	
+	height: 640px !important;
+       max-height: 640px !important;
+	}
+}

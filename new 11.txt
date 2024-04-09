@@ -1,0 +1,87 @@
+https://lockly.com/products/lockly-secure-advanced-smart-lock-door
+https://lockly.com/products/lockly-secure-advanced-smart-lock-door?variant=32292611883121
+https://lockly.com/products/secure-link-wifi-hub
+
+
+
+class="lazy" data-src
+
+loading="lazy"
+
+loading="lazy" alt=""
+
+
+
+
+spdn.liquid
+
+<!--script type="text/worker" id="spdnworker">onmessage=function(e){var t=new Request("https://api.speedien.com/optimize/03d98633934e103e65b20799757cf2ef",{redirect:"follow"});fetch(t).then(e=>e.text()).then(e=>{postMessage(e)})};</script>
+<script type="text/javascript">var spdnx=new Worker("data:text/javascript;base64,"+btoa(document.getElementById("spdnworker").textContent));spdnx.onmessage=function(t){var e=document.createElement("script");e.type="text/javascript",e.textContent=t.data,document.head.appendChild(e)},spdnx.postMessage("init");</script>
+<script type="text/javascript" data-spdn="1">
+const observer=new MutationObserver(mutations=>{mutations.forEach(({addedNodes})=>{addedNodes.forEach(node=>{if(node.tagName==='SCRIPT'&&node.className=='analytics'){node.type='text/spdnscript'}
+if(node.tagName==='SCRIPT'&&node.innerHTML.includes('asyncLoad')){node.type='text/spdnscript'}
+if(node.nodeType===1&&node.tagName==='SCRIPT'&&node.innerHTML.includes('facebook')){node.type='text/spdnscript'}
+if(node.nodeType===1&&node.tagName==='SCRIPT'&&node.innerHTML.includes('hotjar')){node.type='text/spdnscript'}
+if(node.nodeType===1&&node.tagName==='SCRIPT'&&node.innerHTML.includes('gtag')){node.type='text/spdnscript'}
+if(node.nodeType===1&&node.tagName==='SCRIPT'&&node.innerHTML.includes('tagmanager')){node.type='text/spdnscript'}
+if(node.nodeType===1&&node.tagName==='SCRIPT'&&node.innerHTML.includes('gtm')){node.type='text/spdnscript'}
+if(node.nodeType===1&&node.tagName==='SCRIPT'&&node.innerHTML.includes('klaviyo')){node.type='text/spdnscript'}
+if(node.nodeType===1&&node.tagName==='SCRIPT'&&node.src.includes('klaviyo')){node.type='text/spdnscript'}
+if(node.tagName==='SCRIPT'&&node.innerHTML.includes('bazaarvoice')){node.type='text/spdnscript'}
+if(node.tagName==='SCRIPT'&&node.innerHTML.includes('youtube')){node.type='text/spdnscript'}
+if(node.tagName==='SCRIPT'&&node.innerHTML.includes('wsg')){node.type='text/spdnscript'}
+if(node.nodeType===1&&node.tagName==='SCRIPT'&&node.src.includes('googlet')){node.type='text/spdnscript'}})})})
+var ua = navigator.userAgent.toLowerCase();if (ua.indexOf('chrome') > -1) {observer.observe(document.documentElement,{childList:true,subtree:true})}</script--> 
+
+
+
+
+locky
+
+.pagination .next, .pagination .prev, .btn, .find_us .find_us_block .pf-212_, .shopify-payment-button .shopify-payment-button__button--unbranded, .gf_hero-overlay, .__pf_Bd-SpNKe .pf-438_, .cc-color-override-1602114553.cc-revoke, .__pf_Bd-SpNKe .pf-6_, .go1777831761, .__pf_fzsSJyxM .pf-12_, .__pf_fzsSJyxM .pf-191_, .__pf_fzsSJyxM .pf-24_, .__pf_fzsSJyxM .pf-433_, .__pf_fzsSJyxM .pf-135_, .__pf_fzsSJyxM .pf-171_, .__pf_fzsSJyxM .pf-99_, .__pf_Bd-SpNKe .pf-103_, .__pf_Bd-SpNKe .pf-114_, .__pf_Bd-SpNKe .pf-125_, .__pf_Bd-SpNKe .pf-136_, .__pf_Bd-SpNKe .pf-147_, .__pf_Bd-SpNKe .pf-158_, .__pf_Bd-SpNKe .pf-175_, .__pf_Bd-SpNKe .pf-186_, .__pf_Bd-SpNKe .pf-197_, .__pf_Bd-SpNKe .pf-208_, .__pf_Bd-SpNKe .pf-219_, .__pf_Bd-SpNKe .pf-230_, .__pf_Bd-SpNKe .pf-249_, .__pf_Bd-SpNKe .pf-25_, .__pf_Bd-SpNKe .pf-260_, .__pf_Bd-SpNKe .pf-279_, .__pf_Bd-SpNKe .pf-290_, .__pf_Bd-SpNKe .pf-301_, .__pf_Bd-SpNKe .pf-319_, .__pf_Bd-SpNKe .pf-330_, .__pf_Bd-SpNKe .pf-341_, .__pf_Bd-SpNKe .pf-35_, .__pf_Bd-SpNKe .pf-360_, .__pf_Bd-SpNKe .pf-371_, .__pf_Bd-SpNKe .pf-382_, .__pf_Bd-SpNKe .pf-45_, .__pf_Bd-SpNKe .pf-63_, .__pf_Bd-SpNKe .pf-74_, .__pf_Bd-SpNKe .pf-85_, .__pf_Bd-SpNKe .pf-398_, .__pf_Bd-SpNKe .pf-418_, .__pf_Bd-SpNKe .pf-465_ [data-pf-type="Accordion.Header"][data-active=true], .__pf_Bd-SpNKe .pf-491_{
+	background-color: #0050C7 !important;
+}
+
+.__pf .pf-106_,
+.__pf .pf-150_ {
+  background-color: #fff !important;
+}
+
+.__pf .pf-103_,
+.__pf .pf-158_,
+.__pf .pf-60_,
+.__pf .pf-68_,
+.__pf .pf-90_, .ql-font-poppins {
+  color: #000 !important;
+}
+
+.__pf .pf-87_ {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  line-height: 0 !important;
+  color: #fff !important;
+}
+
+.__pf .pf-155_ {
+  background-color: #fff !important;
+}
+.pf-254_, .pf-251_{
+	background-color: #ebebeb !important; 
+}
+
+    .pf-429_, .pf-432_{
+	background-color:#e4e4e6 !important; 
+}
+
+    .__pf_fzsSJyxM .pf-277_, .__pf_fzsSJyxM .pf-278_, .__pf_fzsSJyxM .pf-279_, .__pf_fzsSJyxM .pf-280_, .__pf_fzsSJyxM .pf-281_, .__pf_fzsSJyxM .pf-297_, .__pf_fzsSJyxM .pf-298_, .__pf_fzsSJyxM .pf-299_, .__pf_fzsSJyxM .pf-300_, .__pf_fzsSJyxM .pf-301_, .__pf_fzsSJyxM .pf-317_, .__pf_fzsSJyxM .pf-318_, .__pf_fzsSJyxM .pf-319_, .__pf_fzsSJyxM .pf-320_, .__pf_fzsSJyxM .pf-321_, .__pf_fzsSJyxM .pf-337_, .__pf_fzsSJyxM .pf-338_, .__pf_fzsSJyxM .pf-339_, .__pf_fzsSJyxM .pf-340_, .__pf_fzsSJyxM .pf-341_, .__pf_fzsSJyxM .pf-357_, .__pf_fzsSJyxM .pf-358_, .__pf_fzsSJyxM .pf-359_, .__pf_fzsSJyxM .pf-360_, .__pf_fzsSJyxM .pf-361_, .__pf_fzsSJyxM .pf-377_, .__pf_fzsSJyxM .pf-378_, .__pf_fzsSJyxM .pf-379_, .__pf_fzsSJyxM .pf-380_, .__pf_fzsSJyxM .pf-381_ {
+    
+    color: #0050C7 !important;
+}
+
+ .__pf_Bd-SpNKe .pf-491_, .__pf_Bd-SpNKe .pf-398_, .__pf_Bd-SpNKe .pf-418_, .__pf_fzsSJyxM .pf-179_, .__pf_fzsSJyxM .pf-390_, .__pf_fzsSJyxM .pf-508_, .__pf_fzsSJyxM .pf-597_, .__pf_fzsSJyxM .pf-621_{
+  border-color: #0050C7 !important;
+}
+
+.__pf_Bd-SpNKe .pf-103_, .__pf_Bd-SpNKe .pf-114_, .__pf_Bd-SpNKe .pf-125_, .__pf_Bd-SpNKe .pf-136_, .__pf_Bd-SpNKe .pf-147_, .__pf_Bd-SpNKe .pf-158_, .__pf_Bd-SpNKe .pf-175_, .__pf_Bd-SpNKe .pf-186_, .__pf_Bd-SpNKe .pf-197_, .__pf_Bd-SpNKe .pf-208_, .__pf_Bd-SpNKe .pf-219_, .__pf_Bd-SpNKe .pf-230_, .__pf_Bd-SpNKe .pf-249_, .__pf_Bd-SpNKe .pf-25_, .__pf_Bd-SpNKe .pf-260_, .__pf_Bd-SpNKe .pf-279_, .__pf_Bd-SpNKe .pf-290_, .__pf_Bd-SpNKe .pf-301_, .__pf_Bd-SpNKe .pf-319_, .__pf_Bd-SpNKe .pf-330_, .__pf_Bd-SpNKe .pf-341_, .__pf_Bd-SpNKe .pf-35_, .__pf_Bd-SpNKe .pf-360_, .__pf_Bd-SpNKe .pf-371_, .__pf_Bd-SpNKe .pf-382_, .__pf_Bd-SpNKe .pf-45_, .__pf_Bd-SpNKe .pf-63_, .__pf_Bd-SpNKe .pf-74_, .__pf_Bd-SpNKe .pf-85_ {
+    border: 2px solid #0050c7 !important;
+}

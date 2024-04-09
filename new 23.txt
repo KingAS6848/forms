@@ -1,0 +1,42 @@
+<script>
+  function loadHubSpotForms() {
+    const script = document.createElement("script");
+    script.src = "https://js.hsforms.net/forms/embed/v2.js";
+    script.type = "text/javascript";
+    script.async = true;
+    script.onload = () => {
+      try {
+        hbspt.forms.create({
+          region: "na1",
+          portalId: "7870003",
+          formId: "4091945a-4d42-4107-8117-ada0fb91ad25",
+        });
+      } catch (error) {
+        console.warn(error);
+      }
+    };
+    document.head.appendChild(script);
+  }
+
+  function addEventListenersToElement(elementId) {
+    const element = document.getElementById(elementId);
+    element.addEventListener("click", loadHubSpotForms);
+    element.addEventListener("mouseover", loadHubSpotForms);
+    element.addEventListener("mouseout", loadHubSpotForms);
+	element.addEventListener("mousedown", loadHubSpotForms);
+	element.addEventListener("mousemove", loadHubSpotForms);
+	element.addEventListener("keydown", loadHubSpotForms);
+	element.addEventListener("scroll", loadHubSpotForms);
+	element.addEventListener("touchstart", loadHubSpotForms);
+	element.addEventListener("click", loadHubSpotForms);
+	element.addEventListener("keypress", loadHubSpotForms);
+	element.addEventListener("touchmove", loadHubSpotForms);
+    // Add more event listeners as needed
+  }
+
+  // Call the function to add event listeners after 5 seconds
+  setTimeout(() => addEventListenersToElement("triggerElement"), 5000);
+</script>
+
+
+

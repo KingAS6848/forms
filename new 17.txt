@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 "> <![endif]-->
+
+<!--[if IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+
+<!--[if IE 8]><html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+
+<!--[if IE 9]><html class="no-js lt-ie10"> <![endif]-->
+
+<!--[if gt IE 8]><!-->
+
+<html class="no-js">
+
+<!--<![endif]-->
+
+<head>
+
+
+
+       <!-- Global site tag (gtag.js) - Google Ads: 1016042014 -->
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>{{@$title}} - {{ Settings()->site_name }}</title>
+
+<meta name="description" content="{{ @$desc }}">
+
+<meta property="og:locale" content="en_US">
+
+<meta property="og:type" content="website">
+
+<meta property="og:title" content="{{ @$title }}">
+
+<meta property="og:url" content="{{ env('APP_URL') }}">
+
+<meta property="og:site_name" content="{{ Settings()->site_name }}">
+
+<meta property="og:description" content="{{ @$desc }}">
+
+<meta property="og:image" content="{{asset('images/zebratechies-og-banner.png')}}">
+
+<link rel="canonical" href="{{ Request::url() }}">
+
+<link href="/images/favicon.ico" rel="shortcut icon" >
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<link id='style-static' href="/css/be_style.css" rel='stylesheet'>
+
+<link href="/css/newpage-style.css" rel='stylesheet'>
+
+<link href="/css/animation-css/styles.css" rel='stylesheet'> 
+
+<link href="/css/animation-css/aos.css" rel='stylesheet'> 
+
+
+
+<?php
+
+$segments = explode('/', $_SERVER['REQUEST_URI']);
+
+if($segments[1]=='youtube-optimization')
+
+{
+
+?>
+
+<style>.page-banner{display:none;}
+
+.flv_sections_pages{margin-top: -20px;}
+
+</style>
+
+<link id='style-static' href="/css/page-styles.css" rel='stylesheet'>
+
+<?php
+
+}
+
+else
+
+{
+
+ ?>
+
+ <link id='style-static' href="/css/page-style.css" rel='stylesheet'>
+
+    <?php
+
+}
+
+?>
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+
+<!--<script src="/js/jquery-2.1.4.min.js" ></script> -->
+
+
+<!-- carouFredSel library 
+<script src="https://raw.githubusercontent.com/Codeinwp/carouFredSel-jQuery/master/jquery.carouFredSel-6.2.1.js"></script> 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<script src="https://raw.githubusercontent.com/DivaVocals/carouFredSel/master/jquery.carouFredSel-6.2.1-packed.js"></script>
+
+<script src="/js/scripts.js"></script>
+
+<script src="/js/scripts.min.js"></script>
+
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="dns-prefetch" href="//www.google-analytics.com"> 
+
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+
+<link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com">
+
+<link rel="dns-prefetch" href="//chimpstatic.com">
+
+<link rel="dns-prefetch" href="//www.clickcease.com">
+
+<link rel="dns-prefetch" href="//embed.tawk.to">
+
+<link rel="dns-prefetch" href="//www.clickbrainiacs.com">
+
+<link rel="dns-prefetch" href="//va.tawk.to">
+
+<link rel="dns-prefetch" href="//googleads.g.doubleclick.net">
+
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+
+<script async data-src="https://www.googletagmanager.com/gtag/js?id=AW-1016042014" type='lazyload2' ></script>
+
+<script  >
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+
+
+  gtag('config', 'AW-1016042014');
+
+</script>
+
+<?=@$code?>
+
+<script>
+
+  gtag('config', 'AW-1016042014/oEViCJrFl4oDEJ6kvuQD', {
+
+    'phone_conversion_number': '+91-9804210198'
+
+  });
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-20984230-2"></script>
+
+<script>
+
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){dataLayer.push(arguments);}
+
+gtag('js', new Date());
+
+gtag('config', 'UA-20984230-2');
+
+</script>
+
+
+
+
+
+@if(!empty(Advanced()->head_code))
+
+	{!! Advanced()->head_code !!}	
+
+	@endif
+
+    @if(!empty(custom_css()->code))
+
+	<style>
+
+    {!! custom_css()->code !!}
+
+    #pageLoader{position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: 999999;background: url('/images/{{ Settings()->logo }}') center no-repeat #fff;}
+
+    </style>
+
+    @endif
+
+    @yield('css')
+
+    
+
+
+
+   
+
+</head>
+
+<body class="page-parent template-slider color-blue layout-full-width header-stack header-left subheader-transparent sticky-header sticky-white subheader-title-left">
+
+<!-- <div id="pageLoader"></div> -->
+
+<div id="Wrapper"> 
+
+      @include('includes.header') 
+
+      <div id="Content">
+
+    <div class="content_wrapper clearfix">
+
+          <div class="sections_group"> @yield('content') </div>
+
+        </div>
+
+  </div>
+
+      @include('includes.footer') 
+
+  </div>
+
+	@if(!empty(Advanced()->footer_code))
+
+		 {!! Advanced()->footer_code !!}
+
+    @endif
+
+    <div id="Action_bar" class="active_top_bar" style="position: fixed;z-index: 9001;bottom: 0;top: auto; background: #be1310;">
+
+      <div class="container">
+
+          <ul class="contact_details footer-bottom">
+
+                 <li class="mail"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:{{Settings()->phone}}"  style="color:#ffff">{{Settings()->phone}}</a></li>
+
+                 <li class="mail"><i class="fa fa-skype" aria-hidden="true"></i><a href="skype:{{Settings()->reddit}}?chat"  style="color:#ffff">{{Settings()->reddit}}</a></li>
+
+                 <li class="mail"><i class="fa fa-whatsapp"></i><a href="https://web.whatsapp.com/send?phone={{Settings()->medium}}" target="_blank" style="color:#ffff">WhatsApp: {{Settings()->medium}}</a></li>
+
+                 <li class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:support@zebratechies.com" style="color:#ffff" >support@zebratechies.com</a></li>
+
+          </ul>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<script type="lazyload2" data-src="/js/jquery.plugins.js"></script> 
+
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+ <script src="/js/animations/aos.js"></script> 
+
+<div id="footer_scripts"></div>
+
+<script src="/js/lazysizes.js"></script>
+
+<script type="lazyload2" data-src="/js/scrollMove.js"></script>
+
+
+
+<script>
+
+  // jQuery('.responsive-menu-toggle').click(function(e) {
+
+	// 	e.preventDefault();
+
+	// 	var el = jQuery(this)
+
+	// 	var menu = jQuery('#Top_bar #menu');
+
+	// 	var menuWrap = menu.closest('.menu_wrapper');
+
+	// 	// el.toggleClass('active');
+
+	// 	if (el.hasClass('is-sticky') && el.hasClass('active')) {
+
+	// 		var top = 0;
+
+	// 		if (menuWrap.length) top = menuWrap.offset().top;
+
+	// 		jQuery('body,html').animate({
+
+	// 			scrollTop: top
+
+	// 		}, 200);
+
+	// 	}
+
+		// menu.stop(true, true).slideToggle(200);
+
+	// });
+
+
+
+ var mobile_init_W 	=  1240;
+
+  function mainMenu(){
+
+			
+
+			var mm_mobile_init_W = mobile_init_W;
+
+
+
+			if( $( 'body' ).hasClass( 'header-simple' ) || $( '#Header_creative.dropdown' ).length ){
+
+				mm_mobile_init_W = 9999;
+
+			}
+
+		
+
+			$( '#menu > ul.menu' ).mfnMenu({
+
+				addLast		: true,
+
+				arrows		: true,
+
+				mobileInit	: mm_mobile_init_W,
+
+			});
+
+			
+
+			$( '#secondary-menu > ul.secondary-menu' ).mfnMenu({
+
+				mobileInit	: mm_mobile_init_W,
+
+			});
+
+			
+
+		}
+
+	
+
+	
+
+
+
+
+
+ 
+
+ 
+
+
+
+(function( $ ){
+
+	"use strict";
+
+	
+
+	$.fn.mfnMenu = function( options ){
+
+
+
+		var menu = $(this);
+
+		
+
+		var defaults = {
+
+			addLast		: false,
+
+			arrows      : false,
+
+			delay       : 100,
+
+			hoverClass  : 'hover',
+
+			mobileInit	: 768,
+
+			responsive	: true
+
+		};
+
+		options = $.extend( defaults, options );
+
+		
+
+		
+
+		var init = function(){
+
+			
+
+			// add '.submenu' class
+
+			$( 'li:has(ul)', menu ).addClass( 'submenu' );
+
+			
+
+			// append mobile toggle button
+
+			$( 'li:has(ul)', menu ).append( '<span class="menu-toggle"></span>' );
+
+			
+
+			// add '.mfn-megamenu-parent' class
+
+			menu.children( 'li:has( ul.mfn-megamenu )' ).addClass( 'mfn-megamenu-parent' );	
+
+			
+
+			// add '.last-item' class
+
+			$( '.submenu ul li:last-child', menu ).addClass( 'last-item' );
+
+			
+
+			// add '.last' class
+
+			if( options.addLast ) {
+
+				$( '> li:last-child', menu ).addClass( 'last' )
+
+					.prev().addClass( 'last' );
+
+			}
+
+			
+
+			// appand submenu arrows
+
+			if( options.arrows ) {
+
+				$( 'li ul li:has(ul) > a', menu ).append( '<i class="menu-arrow icon-right-open"></i>' );
+
+			}
+
+
+
+		};
+
+		
+
+		
+
+		var doMenu = function(){
+
+
+
+			if( ( $(window).width() >= options.mobileInit ) || ( ! options.responsive ) ){
+
+				
+
+				// desktop --------------------------------
+
+
+
+				$( '> li, ul:not(.mfn-megamenu) li', menu ).hover(function() {
+
+					
+
+					$(this).stop(true,true).addClass( options.hoverClass );
+
+					
+
+					$(this).children( 'ul' ).stop(true,true).fadeIn( options.delay );
+
+					
+
+					
+
+				}, function(){
+
+					
+
+					$(this).stop(true,true).removeClass( options.hoverClass );
+
+					
+
+					$(this).children( 'ul' ).stop(true,true).fadeOut( options.delay );	
+
+					
+
+				});
+
+				
+
+			} else {
+
+
+
+				// mobile ---------------------------------
+
+				
+
+				$( 'li', menu ).unbind('hover');
+
+				
+
+				$( 'li > .menu-toggle', menu ).off('click').on('click', function(){
+
+	
+
+					var el = $(this).closest('li');
+
+					
+
+					if( el.hasClass( options.hoverClass ) ){
+
+	
+
+						el.removeClass( options.hoverClass )
+
+							.children('ul').stop(true,true).fadeOut( options.delay );			
+
+						
+
+					} else {
+
+		
+
+						el.addClass( options.hoverClass )
+
+							.children('ul').stop(true,true).fadeIn( options.delay );	
+
+	
+
+					}
+
+					
+
+				});
+
+				
+
+			}
+
+			
+
+		};
+
+		
+
+
+
+		$(window).bind( 'resize', doMenu );
+
+		
+
+		var __constructor = function(){
+
+			init();
+
+			doMenu();
+
+		};
+
+		
+
+		__constructor();
+
+
+
+	};
+
+
+
+})(jQuery);
+
+
+
+   	mainMenu();
+
+</script>
+
+<!-- <script>
+
+	 jQuery( document ).ready(function() {
+
+		 setTimeout(function(){ jQuery("#pageLoader").hide(); }, 300);
+
+			 
+
+		 });
+
+	 jQuery(function () {
+
+			 scrollMove('.items',60 ,1 );
+
+			pause: 'null';
+
+		 });
+
+  </script> -->
+
+@yield('js')
+
+<script>
+
+jQuery( document ).ready(function() {
+
+    setTimeout(function(){ jQuery("#pageLoader").hide(); }, 300);
+
+    @if(session('form') && session('form') == 'freewebsiteAnalysis')
+
+    $('#FreeWebsiteAnalysisModal').modal('show'); 
+
+    @endif
+
+    
+
+    @if(session('form') && session('form') == 'QuickEnquiry')
+
+    $('#QuickEnquiryModal').modal('show'); 
+
+    @endif
+
+});
+
+</script>
+
+<script>
+
+	AOS.init({
+
+		easing: 'ease-out-back',
+
+		duration: 1000
+
+	});
+
+</script>
+
+<script>
+
+
+
+jQuery(document).ready(function(){
+
+  jQuery(".hid-dsp").click(function(){
+
+    jQuery(".rd-btn-clps").toggleClass("rd-btn-clps-blck", "slow");
+
+	var val = jQuery(".hid-dsp").text();
+
+
+
+	if(val=="Read More")
+
+	{
+
+	jQuery(".hid-dsp").text('View Less');
+
+	}
+
+	else
+
+	{
+
+	jQuery(".hid-dsp").text('Read More');
+
+	}
+
+  });
+
+});
+
+jQuery(document).ready(function(){
+
+  jQuery(".hid-dsp-tb").click(function(){
+
+    jQuery(".rd-btn-clps-tb").toggleClass("rd-btn-clps-blck-tb", "slow");
+
+	var val = jQuery(".hid-dsp-tb").text();
+
+
+
+	if(val=="Read More")
+
+	{
+
+	jQuery(".hid-dsp-tb").text('View Less');
+
+	}
+
+	else
+
+	{
+
+	jQuery(".hid-dsp-tb").text('Read More');
+
+	}
+
+  });
+
+});
+
+function toggleIcon(e) {
+
+    jQuery(e.target)
+
+        .prev('.panel-heading')
+
+        .find(".more-less")
+
+        .toggleClass('glyphicon-plus glyphicon-minus');
+
+}
+
+jQuery('.panel-group').on('hidden.bs.collapse', toggleIcon);
+
+jQuery('.panel-group').on('shown.bs.collapse', toggleIcon);
+
+jQuery(document).ready(function(){
+
+  jQuery('#prices td').wrapInner('<div class="pricing-table" />'); 
+
+});
+
+</script>
+
+
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+
+  var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy-background"));
+
+
+
+  if ("IntersectionObserver" in window) {
+
+    let lazyBackgroundObserver = new IntersectionObserver(function(entries, observer) {
+
+      entries.forEach(function(entry, index) {
+
+        
+
+        if(index == 0){
+
+          // console.log('yes its ', index);
+
+          lazyBackgroundObserver.unobserve(entry.target);
+
+        }else{
+
+          // console.log('yes its not ', index);
+
+          setTimeout(function(){
+
+          entry.target.classList.add("visible");
+
+          }, 5000);
+
+        }
+
+        
+
+        // if (entry.isIntersecting) {
+
+        //    if(index == 0){
+
+        //       entry.target.classList.add("visible");
+
+        //    }else{
+
+        //       setTimeout(function(){
+
+        //           entry.target.classList.add("visible");
+
+        //       }, 5500);
+
+        //   }
+
+        //   lazyBackgroundObserver.unobserve(entry.target);
+
+        // }
+
+      });
+
+    });
+
+
+
+    lazyBackgrounds.forEach(function(lazyBackground) {
+
+      lazyBackgroundObserver.observe(lazyBackground);
+
+    });
+
+  }
+
+});
+
+</script>
+
+
+
+<script>
+
+    // var pic = new Image();
+
+    // var pic2 = new Image();
+
+    // var pic3 = new Image();
+
+    // pic.src="(/photos/1/Zebratechies-new-page-ipad.jpg";
+
+    // pic2.src="images/inputs/input2.png";
+
+    // pic3.src="images/inputs/input3.png";
+
+</script>
+
+
+
+
+
+<style>
+
+ .senduspro.section_4.lazy-background.visible{
+
+    background: url('/photos/1/Send-us-Proposal.jpg'); 
+
+  }
+
+  .section_4.founder_image.lazy-background.visible{
+
+   background: url('/photos/1/Founder-SEO.jpg');
+
+  }
+
+  .senduspro.section_4.lazy-background{
+
+    background: url('/photos/1/Send-us-Proposal.jpg');
+
+  }
+
+
+
+nav#menu {
+
+  display: none !important; 
+
+}
+
+
+
+nav#menu.tetset {
+
+    display: block !important;
+
+}
+
+  section.senduspro.section_4.lazy-background{}
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+<script>
+
+  var windowWidth,
+
+    lazyImages,
+
+    lazyBackground,
+
+    lazyIframe,
+
+    lazyScripts,
+
+    src,
+
+    style,
+
+    datasrc,
+
+    urls,
+
+    analytics,
+
+    s,
+
+    x,
+
+    i,
+
+    j = 0,
+
+    flag;
+
+
+
+function lazyLoadImg() {
+
+    lazyImages.forEach(function (e) {
+
+        (e.src = e.dataset.src), (e.className += " lazyloaded");
+
+    });
+
+}
+
+function lazyLoadBackground() {
+
+    lazyBackground.forEach(function (e) {
+
+        e.style = e.dataset.style;
+
+    });
+
+}
+
+function lazyLoadIframe() {
+
+    lazyIframe.forEach(function (e) {
+
+        e.src = e.dataset.src;
+
+    });
+
+}
+
+function lazyLoadScripts() {
+
+  // console.log("gfsdgf");
+
+    isNaN(j) && (j = 0),
+
+        j != lazyScripts.length &&
+
+            (lazyScripts[j] != null && lazyScripts[j].getAttribute("type") == "lazyload2"
+
+                ? (lazyScripts[j].setAttribute("type", "lazyloaded"),
+
+                  typeof lazyScripts[j].dataset.src != "undefined"
+
+                      ? (((s = document.createElement("script")).type = "text/javascript"),
+
+                        (s.async = !0),
+
+                        (s.src = lazyScripts[j].dataset.src),
+
+                        (x = document.getElementsByTagName("body")[0]).appendChild(s),
+
+                        (s.onload = function () {
+
+                            j++, lazyLoadScripts();
+
+                        }))
+
+                      : (((s = document.createElement("script")).type = "text/javascript"), (s.async = !0), (s.innerHTML = lazyScripts[j].innerHTML), (x = document.getElementsByTagName("body")[0]).appendChild(s), j++, lazyLoadScripts()))
+
+                : (j++, lazyLoadScripts()));
+
+}
+
+function lazyLoadCss(e) {
+
+    ((s = document.createElement("link")).rel = "stylesheet"), (s.href = e), (x = document.getElementsByTagName("head")[0]).appendChild(s);
+
+}
+
+function load_third_party_js() {
+
+  var textarea = document.getElementById('test');
+
+  if (textarea) {
+
+  var input = textarea.value;
+
+      var div = document.createElement('div');
+
+      div.innerHTML = input;
+
+      var scripts = div.getElementsByTagName("script");
+
+      for (var i = 0; i < scripts.length; i++) {
+
+          var script = document.createElement('script');
+
+          script.type = 'text/javascript';
+
+        if (scripts[i].src) {
+
+          // console.log(i, 'scripts[i].src ===>>', scripts[i].src);
+
+          script.src = scripts[i].src;
+
+        } else { 
+
+          // console.log(i, scripts[i].innerHTML);
+
+          script.innerHTML = scripts[i].innerHTML;
+
+          // console.log('loadScript');
+
+        }
+
+          document.body.appendChild(script);
+
+      }
+
+    textarea.remove()
+
+    
+
+  }
+
+}
+
+function lazyLoadJS(e) {
+
+    ((s = document.createElement("script")).type = "text/javascript"), (s.async = !0), (s.src = e), (x = document.getElementsByTagName("body")[0]).appendChild(s);
+
+}
+
+function asyncLoad() {}
+
+function load_all_js() { 
+
+
+
+          lazyLoadCss("https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/default_thank_you.css"),
+
+          // lazyLoadCss("http://staging.zebratechies.com/css/admin_custom.css"),
+
+        //lazyLoadCss("xcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"),
+
+          lazyLoadCss("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"),
+
+          // lazyLoadCss("http://staging.zebratechies.com/vendor/adminlte/plugins/iCheck/square/blue.css"),
+
+          // lazyLoadCss("http://staging.zebratechies.com/vendor/adminlte/css/auth.css"),
+
+          lazyLoadCss("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"),
+
+          lazyLoadCss("https://fonts.googleapis.com/"),
+
+          lazyLoadCss("https://fonts.gstatic.com"),
+
+          lazyLoadCss("https://fonts.googleapis.com/css?family=Nunito"),
+
+          // lazyLoadCss("http://staging.zebratechies.com/css/global.css"),
+
+          // lazyLoadCss("http://staging.zebratechies.com/css/structure.css"),
+
+          // lazyLoadCss("http://staging.zebratechies.com/css/be_style.css"),
+
+          // lazyLoadCss("http://staging.zebratechies.com/css/custom.css"),
+
+          // lazyLoadCss("http://staging.zebratechies.com/css/be_style.css"),
+
+          // lazyLoadCss("https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"),
+
+          // lazyLoadCss("http://staging.zebratechies.com/css/newpage-style.css"),
+
+          // lazyLoadCss("http://staging.zebratechies.com/css/animation-css/styles.css"),
+
+          // lazyLoadCss("http://staging.zebratechies.com/css/page-styles.css"),
+
+          // lazyLoadCss("http://staging.zebratechies.com/css/page-style.css"),
+
+         // lazyLoadCss("http://staging.zebratechies.com/css/bootstrap.css"),
+
+          lazyLoadCss("https://fonts.googleapis.com/css?family=Poppins:300,400,600,700"),
+
+          lazyLoadCss("https://fonts.googleapis.com/css?family=Montserrat:200,700,800"),
+
+          lazyLoadCss("https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"),
+
+          lazyLoadCss("https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.css"),
+
+          lazyLoadCss("https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css"),
+
+          lazyLoadCss("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic")
+
+          
+
+        setTimeout(function () {
+
+           // lazyLoadScripts();
+
+        }, 1e3),
+
+        setTimeout(function () {
+
+            (lazyImages = document.querySelectorAll("img.lazy")).forEach(function (e) {
+
+                e.src = e.dataset.src;
+
+            });
+
+        }, 5e3);
+
+}
+
+function initOpti() {
+
+  // console.log("init func ==>>");
+
+  // console.log("flag ==>>", flag);
+
+    flag && ((flag = 0), lazyLoadImg(), lazyLoadBackground(), lazyLoadIframe(),  load_third_party_js(), lazyLoadScripts(), load_all_js());
+
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    (windowWidth = screen.width),
+
+        (lazyImages = document.querySelectorAll("img.lazy")),
+
+        (lazyBackground = document.querySelectorAll(".lazybg")),
+
+        (lazyIframe = document.querySelectorAll("iframe.lazy")),
+
+        (lazyScripts = document.querySelectorAll("script[type='lazyload2']")),
+
+        (i = 0),
+
+        (j = 0),
+
+        (flag = 1),
+
+        window.addEventListener("scroll", function () {
+
+            initOpti();
+
+              // setTimeout(function () {
+
+              //   lazyLoadScripts();
+
+              // }, 1e3)
+
+        }),
+
+        window.addEventListener("mousemove", function () {
+
+          initOpti();
+
+          // setTimeout(function () {
+
+          //       lazyLoadScripts();
+
+          //     }, 1e3)
+
+        }),
+
+        window.addEventListener("touchstart", function () {
+
+          // console.log("test 3")  
+
+          initOpti();
+
+          // setTimeout(function () {
+
+          //       lazyLoadScripts();
+
+          //     }, 1e3)
+
+        }),
+
+        setTimeout(function () {
+
+          // console.log("test 4")  
+
+          initOpti();
+
+          // setTimeout(function () {
+
+          //       lazyLoadScripts();
+
+          //     }, 1e3)
+
+        }, 10e3);
+
+});
+
+//# sourceMappingURL=/s/files/1/0899/0534/t/49/assets/avlabs-optimization.js.map?v=11910704494311145763
+
+// setTimeout(function(){
+
+//    window.dispatchEvent(new Event('resize'));
+
+// }, 4000);
+
+
+
+setInterval(function(){
+
+   window.dispatchEvent(new Event('resize'));
+
+}, 2000);
+
+
+
+
+
+jQuery('.faq .title').click(function(){
+
+    jQuery(this).parent('.question').find('.answer').slideToggle();
+
+})
+
+
+
+
+
+
+
+</script>
+
+
+
+<script>
+
+	/* ---------------------------------------------------------------------------
+
+	 * Responsive menu
+
+	 * --------------------------------------------------------------------------- */
+
+
+
+// jQuery('.responsive-menu-toggle').click(function(e) {
+
+// 		e.preventDefault();
+
+// 		var el = jQuery(this)
+
+// 		var menu = jQuery('#Top_bar #menu');
+
+// 		var menuWrap = menu.closest('.menu_wrapper');
+
+// 		el.toggleClass('active');
+
+// 		if (el.hasClass('is-sticky') && el.hasClass('active')) {
+
+// 			var top = 0;
+
+// 			if (menuWrap.length) top = menuWrap.offset().top;
+
+// 			jQuery('body,html').animate({
+
+// 				scrollTop: top
+
+// 			}, 200);
+
+// 		}
+
+// 		menu.stop(true, true).slideToggle(200);
+
+// 	});
+
+
+
+</script>
+
+<script>
+
+  jQuery(".responsive-menu-toggle").on("click", function(){
+
+    
+
+    jQuery("#menu").toggleClass("tetset");
+
+    });
+
+</script>
+
+</body>
+
+</html>

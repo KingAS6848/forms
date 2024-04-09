@@ -1,0 +1,289 @@
+Primary Merge Order
+
+/wp-includes/js/jquery/jquery.min.js
+/wp-content/plugins/wp-rocket/assets/js/lazyload/16.1/lazyload.min.js
+primary_script_position
+
+Secondary Sort Order
+
+//www.googletagmanager.com/gtag/js
+/wp-includes/js/dist/vendor/wp-polyfill.min.js
+secondary_script_position
+/wp-includes/js/jquery/jquery-migrate.min.js
+//238509.tctm.co/t.js
+/wp-content/plugins/cleantalk-spam-protect/js/apbct-public--functions.min.js
+/wp-content/plugins/cleantalk-spam-protect/js/apbct-public.min.js
+/wp-content/plugins/cleantalk-spam-protect/js/cleantalk-modal.min.js
+/wp-content/plugins/cleantalk-spam-protect/js/cleantalk_nocache.min.js
+/wp-content/plugins/security-malware-firewall/js/spbc-cookie.min.js
+/wp-content/plugins/simple-social-icons/svgxuse.js
+/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/js/eae.min.js
+/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js
+/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/js/animated-main.min.js
+/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/js/particles.min.js
+/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/magnific.min.js
+/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/vegas/vegas.min.js
+/wp-includes/js/dist/vendor/regenerator-runtime.min.js
+/wp-content/plugins/contact-form-7/includes/js/index.js
+//js.hs-scripts.com/8841994.js
+/wp-content/uploads/essential-addons-elementor/550d0af0d.min.js
+/wp-content/plugins/genesis-blocks/dist/assets/js/dismiss.js
+/wp-includes/js/hoverIntent.min.js
+/wp-content/themes/genesis/lib/js/menu/superfish.min.js
+/wp-content/themes/genesis/lib/js/menu/superfish.args.min.js
+/wp-content/themes/genesis/lib/js/skip-links.min.js
+/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js
+/wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js
+/wp-content/plugins/megamenu/js/maxmegamenu.js
+/wp-includes/js/wp-embed.min.js
+/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js
+/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js
+/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js
+/wp-content/plugins/elementor/assets/js/frontend-modules.min.js
+/wp-content/plugins/elementor-pro/assets/js/frontend.min.js
+/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js
+/wp-includes/js/jquery/ui/core.min.js
+/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js
+/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js
+/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js
+/wp-content/plugins/elementor/assets/js/frontend.min.js
+/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js
+/wp-content/plugins/elementskit-lite/widgets/init/assets/js/animate-circle.js
+/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js
+/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js
+/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js
+/wp-content/avlabs-cache/js/avlabs-mobile-menu.js
+
+Secondary Merge Order
+ctSetCookie
+UA-86462967-1
+
+Exclude Js Files
+/wp-includes/js/jquery/jquery.min.js
+/wp-content/avlabs-cache/js/avlabs-mobile-menu.js
+/wp-includes/js/jquery/jquery-migrate.min.js
+//238509.tctm.co/t.js
+/wp-content/plugins/cleantalk-spam-protect/js/apbct-public--functions.min.js
+/wp-content/plugins/cleantalk-spam-protect/js/apbct-public.min.js
+/wp-content/plugins/cleantalk-spam-protect/js/cleantalk-modal.min.js
+/wp-content/plugins/cleantalk-spam-protect/js/cleantalk_nocache.min.js
+/wp-content/plugins/security-malware-firewall/js/spbc-cookie.min.js
+/wp-content/plugins/simple-social-icons/svgxuse.js
+/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/js/eae.min.js
+/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js
+/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/js/animated-main.min.js
+/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/js/particles.min.js
+/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/magnific.min.js
+/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/vegas/vegas.min.js
+/wp-includes/js/dist/vendor/regenerator-runtime.min.js
+/wp-content/plugins/contact-form-7/includes/js/index.js
+//js.hs-scripts.com/8841994.js
+/wp-content/uploads/essential-addons-elementor/550d0af0d.min.js
+/wp-content/plugins/genesis-blocks/dist/assets/js/dismiss.js
+/wp-includes/js/hoverIntent.min.js
+/wp-content/themes/genesis/lib/js/menu/superfish.min.js
+/wp-content/themes/genesis/lib/js/menu/superfish.args.min.js
+/wp-content/themes/genesis/lib/js/skip-links.min.js
+/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js
+/wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js
+/wp-content/plugins/megamenu/js/maxmegamenu.js
+/wp-includes/js/wp-embed.min.js
+/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js
+/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js
+/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js
+/wp-content/plugins/elementor/assets/js/frontend-modules.min.js
+/wp-content/plugins/elementor-pro/assets/js/frontend.min.js
+/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js
+/wp-includes/js/jquery/ui/core.min.js
+/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js
+/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js
+/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js
+/wp-content/plugins/elementor/assets/js/frontend.min.js
+/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js
+/wp-content/plugins/elementskit-lite/widgets/init/assets/js/animate-circle.js
+/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js
+/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js
+/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js
+
+Critical Css Before Rocket
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/anton/v15/1Ptgg87LROyAm3Kz-C8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_bZF3gnD_g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Questrial';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/questrial/v13/QdVUSTchPBm7nuUeVf70viFl.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Nothing You Could Do';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/nothingyoucoulddo/v10/oY1B8fbBpaP5OX3DtrRYf_Q2BPB1SnfZb3OOnVs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+Critical Css After Rocket
+
+@media (min-width: 768px){
+.elementor-column.elementor-col-100, .elementor-column[data-col="100"] {
+    width: 100%;
+}}
+@media (min-width: 768px){
+.elementor-column.elementor-col-66, .elementor-column[data-col="66"] {
+    width: 66.666%;
+}}
+@media (min-width: 768px){
+.elementor-column.elementor-col-33, .elementor-column[data-col="33"] {
+    width: 33.333%;
+}}
+
+@media (min-width: 768px){
+.elementor-column.elementor-col-50, .elementor-column[data-col="50"] {
+    width: 50%;
+}}
+
+@media (min-width: 768px){
+.elementor-column.elementor-col-25, .elementor-column[data-col="25"] {
+    width: 25%;
+}}
+@media (min-width: 768px){
+.elementor-column.elementor-col-16, .elementor-column[data-col="16"] {
+    width: 16.666%;
+}}
+@media (min-width: 768px){
+.elementor-column.elementor-col-14, .elementor-column[data-col="14"] {
+    width: 14.285%;
+}}
+
+.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.elementor .elementor-background-overlay, .elementor .elementor-background-slideshow {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.elementor-align-center {
+    text-align: center;
+}
+.elementor-button {
+    display: inline-block;
+    line-height: 1;
+    background-color: #818a91;
+    font-size: 15px;
+    padding: 12px 24px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: #fff;
+    fill: #fff;
+    text-align: center;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.elementor-widget-heading .elementor-heading-title.elementor-size-large {
+    font-size: 29px;
+}
+
+home
+
+@media (max-width: 500px) {
+    .elementor-6 .elementor-element.elementor-element-fe923b2 .elementor-repeater-item-9fdb73f .swiper-slide-bg {
+        background-color: var(--e-global-color-primary);
+        background-image: url(/wp-content/uploads/2021/09/responsive-slider2-mobile.jpg) !important;
+        background-size: cover;
+    }
+
+    .elementor-6 .elementor-element.elementor-element-650657d:not(.elementor-motion-effects-element-type-background)>.elementor-column-wrap, .elementor-6 .elementor-element.elementor-element-650657d>.elementor-column-wrap>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+        background-image: url(https://pghpestcontrol.co.uk/wp-content/uploads/2021/01/residential-mobile.jpg) !important;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .elementor-6 .elementor-element.elementor-element-8c0954b:not(.elementor-motion-effects-element-type-background)>.elementor-column-wrap, .elementor-6 .elementor-element.elementor-element-8c0954b>.elementor-column-wrap>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+        background-image: url(https://pghpestcontrol.co.uk/wp-content/uploads/2021/01/commercial2-mobile.jpg) !important;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .elementor-6 .elementor-element.elementor-element-a7a1702:not(.elementor-motion-effects-element-type-background)>.elementor-column-wrap, .elementor-6 .elementor-element.elementor-element-a7a1702>.elementor-column-wrap>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+        background-image: url(https://pghpestcontrol.co.uk/wp-content/uploads/2021/01/rodent2-mobile.jpg) !important;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+page-id-13176
+
+.elementor-screen-only, .screen-reader-text, .screen-reader-text span, .ui-helper-hidden-accessible {
+    position: absolute;
+    top: -10000em;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.elementor-shape-top {
+    top: -1px;
+}
+
+.elementor-shape {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+}
+
+
+
+.elementor-shape svg {
+    display: block;
+    width: calc(100% + 1.3px);
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+</body>
+
+<script> var avlabs_mobile_menu_clicked = false;var avlabs_mobile_menu = document.getElementsByClassName('elementor-menu-toggle')[1];avlabs_mobile_menu.addEventListener("click", function(){
+                avlabs_mobile_menu_clicked = true;
+                });
+            </script></body>

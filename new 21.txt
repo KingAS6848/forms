@@ -1,0 +1,857 @@
+{% if request.path contains 'avlabs-no_page-to-exclude'
+  or  request.path contains 'cart'
+%}
+  {% assign avalabs_optimization = false %}
+{% else %}  
+  {% assign avalabs_optimization = true %}
+{% endif %}
+{% capture pageContent %}
+
+<!doctype html>
+<html class="no-js no-touch" lang="{{ shop.locale }}">
+  <head>{% render 'pagefly-head' %}
+{%- if avalabs_optimization -%}
+<script type="text/javascript">
+let inlineScript = 1 ;
+let srcScript = 1;
+const avlabs_lazyload_inline_js = 
+                                  [
+                                    "appendChild",
+                                    "insertBefore",
+                                    "Shopify.PreviewBarInjector",
+                                    "GTM-PLF4BHW",
+                                    "G-QVVDC08V4E",
+                                    'klaviyo.init',
+                                    '!function(n){var i={',
+                                    
+                                    
+                                  ];
+const avlabs_exclude_lazyload_inline_js = [
+                                             'jquery.min.js',
+                                             'loox.1683694336340.js'
+  
+                                    ];
+  
+const avlabs_remove_inline_js = [
+                                    'let _0x352887'
+                                ];
+  
+const avlabs_exclude_js_src =[
+                                'jquery.min.js',
+                                'superstore.js',
+                                'superstore.opt.min.js',
+                                'jquery.cookie.js',
+                                 'jquery.currencies.min.js',
+                                 '7e563d57c6bcd5d8085d634c4fad7693.js',
+                                  'loox.1683694336340.js',
+                                  'custom_menu_js.js',
+                            ];
+
+const avlabs_remove_js_src =[
+                               
+                                
+                                
+                                ];
+
+  
+const _0x4e3b2c=_0x19d5;function _0x1088(){const _0x40166d=['tagName','trim','text/lazyload','2WnlDdi','8183182ndsNvZ','125633ttGQbq','includes','type','some','removeAttribute','1147794FYCjCq','remove','setAttribute','textContent','nodeType','dataset','innerHTML','20MetRcz','className','SCRIPT','16647795GhsNAH','src','9598640FDsqPJ','avlabsScriptOptimization','observe','forEach','2929332jdCHZq','3469839NVZngp','data-src'];_0x1088=function(){return _0x40166d;};return _0x1088();}(function(_0x443a38,_0x35f538){const _0x4eac55=_0x19d5,_0x5f20d4=_0x443a38();while(!![]){try{const _0x1acc0f=-parseInt(_0x4eac55(0x14c))/0x1+parseInt(_0x4eac55(0x14a))/0x2*(-parseInt(_0x4eac55(0x145))/0x3)+-parseInt(_0x4eac55(0x144))/0x4+parseInt(_0x4eac55(0x158))/0x5*(parseInt(_0x4eac55(0x151))/0x6)+-parseInt(_0x4eac55(0x14b))/0x7+parseInt(_0x4eac55(0x15d))/0x8+parseInt(_0x4eac55(0x15b))/0x9;if(_0x1acc0f===_0x35f538)break;else _0x5f20d4['push'](_0x5f20d4['shift']());}catch(_0x55d565){_0x5f20d4['push'](_0x5f20d4['shift']());}}}(_0x1088,0x9a188));function _0x19d5(_0x5b3ba7,_0x39c104){const _0x108857=_0x1088();return _0x19d5=function(_0x19d548,_0x560532){_0x19d548=_0x19d548-0x143;let _0x234771=_0x108857[_0x19d548];return _0x234771;},_0x19d5(_0x5b3ba7,_0x39c104);}const avlabs_observer=new MutationObserver(_0x107fd3=>{const _0x1be867=_0x19d5;_0x107fd3[_0x1be867(0x143)](({addedNodes:_0x4f620b})=>{const _0x5499a7=_0x1be867;_0x4f620b[_0x5499a7(0x143)](_0x126ee7=>{const _0x1e19cc=_0x5499a7;if(_0x126ee7[_0x1e19cc(0x155)]===0x1&&_0x126ee7[_0x1e19cc(0x147)]===_0x1e19cc(0x15a)){if(_0x126ee7[_0x1e19cc(0x159)]!==_0x1e19cc(0x15e)){if(_0x126ee7[_0x1e19cc(0x154)][_0x1e19cc(0x148)]()!==''){const _0x5e8bd0=avlabs_remove_inline_js['some'](_0xefeed9=>_0x126ee7['innerHTML'][_0x1e19cc(0x14d)](_0xefeed9));if(_0x5e8bd0)_0x126ee7[_0x1e19cc(0x152)]();else{const _0x422e76=avlabs_exclude_lazyload_inline_js[_0x1e19cc(0x14f)](_0x2d2eee=>_0x126ee7['innerHTML']['includes'](_0x2d2eee)),_0x58fef0=avlabs_lazyload_inline_js['some'](_0x5dd0c1=>_0x126ee7[_0x1e19cc(0x157)]['includes'](_0x5dd0c1));_0x58fef0&&!_0x422e76&&(_0x126ee7[_0x1e19cc(0x14e)]=_0x1e19cc(0x149));}inlineScript++;}else{const _0xd27abe=_0x126ee7[_0x1e19cc(0x156)][_0x1e19cc(0x15c)]&&avlabs_remove_js_src[_0x1e19cc(0x14f)](_0x45bd99=>_0x126ee7[_0x1e19cc(0x156)][_0x1e19cc(0x15c)][_0x1e19cc(0x14d)](_0x45bd99));if(_0xd27abe)_0x126ee7[_0x1e19cc(0x152)]();else{const _0x344999=_0x126ee7[_0x1e19cc(0x156)]['src']&&avlabs_exclude_js_src['some'](_0x515103=>_0x126ee7[_0x1e19cc(0x156)]['src']['includes'](_0x515103));if(_0x344999)_0x126ee7[_0x1e19cc(0x156)][_0x1e19cc(0x15c)]===''?_0x126ee7[_0x1e19cc(0x152)]():(_0x126ee7[_0x1e19cc(0x153)](_0x1e19cc(0x15c),_0x126ee7[_0x1e19cc(0x156)][_0x1e19cc(0x15c)]),_0x126ee7[_0x1e19cc(0x150)](_0x1e19cc(0x146))),srcScript++;else{const _0xf40fec=_0x126ee7[_0x1e19cc(0x15c)]&&avlabs_exclude_js_src[_0x1e19cc(0x14f)](_0x53ba31=>_0x126ee7[_0x1e19cc(0x15c)][_0x1e19cc(0x14d)](_0x53ba31));_0x126ee7['hasAttribute'](_0x1e19cc(0x15c))&&!_0xf40fec&&(_0x126ee7[_0x1e19cc(0x153)](_0x1e19cc(0x146),_0x126ee7['src']),_0x126ee7['removeAttribute'](_0x1e19cc(0x15c)));}}}}}});});});avlabs_observer[_0x4e3b2c(0x15f)](document['documentElement'],{'childList':!![],'subtree':!![]});
+</script>
+{%- endif -%}
+    
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+
+      
+    <meta name="google-site-verification" content="Adx9DSj82ZAPl9VcLksS0AMuByDqtOrflbqeaXc74V0" />
+    
+   
+   
+    <!-- Google Tag Manager -->
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.dataset.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PLF4BHW');  </script>
+    <!-- End Google Tag Manager --> 
+     
+ <meta name="facebook-domain-verification" content="0iaombe9orc9qi2mf7zv6d10q9k5qi" />   
+        <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+        
+
+    {% if settings.preconnect_facebook %}
+      <link rel="preconnect" href="https://connect.facebook.net" crossorigin >
+   {% endif %}
+    {% if settings.preconnect_google %}
+      <link rel="preconnect" href="https://www.google-analytics.com" crossorigin >
+    {% endif %}
+
+    {% assign theme_script = 'superstore.js' %}
+    {% if settings.use_minified_js %}
+       {%- if avalabs_optimization -%}   
+            {% assign theme_script = 'superstore.opt.min.js' %}
+      {%- else -%}
+             {% assign theme_script = 'superstore.min.js' %}
+      {% endif %}
+    {% endif %}
+    
+    <title>
+      {{- page_title -}}
+
+      {%- if current_tags -%}
+        {%- include 'advanced-tag-loop' -%}
+        {% assign title_tags = '' %}
+        {% assign meta_tags = current_tags | join: ', ' %}
+        {%- for tag in current_tags -%}
+          {% assign is_advanced_tag = false %}
+          {% assign cat = tag | split: '_' | first %}
+
+          {%- unless cat == tag -%}
+            {%- if cat_array contains cat -%}
+              {% assign is_advanced_tag = true %}
+              {% assign title_tags = title_tags | append: ', ' | append: tag | replace_first: '_', ': ' %}
+            {%- endif -%}
+          {%- endunless -%}
+
+          {%- unless is_advanced_tag -%}
+            {% assign title_tags = title_tags | append: ', ' | append: tag %}
+          {%- endunless -%}
+        {%- endfor -%}
+        {{ 'general.title.tags' | t: tags: title_tags | remove_first: ', ' }}
+      {%- endif -%}
+
+      {%- if current_page != 1 -%}
+        {{- 'general.title.page' | t: page: current_page -}}
+      {%- endif -%}
+
+      {%- unless page_title contains shop.name -%}
+        {{- 'general.title.shop' | t: shop: shop.name -}}
+      {%- endunless -%}
+    </title>
+
+    {% if page_description != blank %}
+      <meta name="description" content="{{ page_description | escape }}">
+    {% endif %}
+
+    {% include 'favicon' %}
+
+    {% if template contains 'collection' and current_tags %}
+      <meta name="robots" content="noindex" />
+      <link rel="canonical" href="{{ shop.url }}{{ collection.url }}" />
+    {% else %}
+      <link rel="canonical" href="{{ canonical_url }}" />
+    {% endif %}
+
+    <meta name="viewport" content="width=device-width">
+
+    {% assign twitter_handle = settings.social_twitter | split: 'twitter.com/' | last %}
+    {%
+      include 'social-meta-tags',
+      twitter_handle: twitter_handle
+    %}
+
+    {% assign preload_styles = settings.preload_styles %}
+
+    <link rel="preload" href="{{ settings.type_menu | font_url }}" as="font" crossorigin="anonymous">
+
+    {% if preload_styles == 'await_critical_styles' %}
+      <link rel="preload" as="style" href="{{ 'theme-critical.scss.css' | asset_url }}">
+    {% else %}
+      <link rel="preload" as="style" href="{{ 'theme.scss.css' | asset_url }}">
+    {% endif %}
+
+    	{{ content_for_header }}
+  
+    <script>
+      document.documentElement.className=document.documentElement.className.replace(/\bno-js\b/,'js');
+      if(window.Shopify&&window.Shopify.designMode)document.documentElement.className+=' in-theme-editor';
+      if(('ontouchstart' in window)||window.DocumentTouch&&document instanceof DocumentTouch)document.documentElement.className=document.documentElement.className.replace(/\bno-touch\b/,'has-touch');
+    </script>
+
+    <script>
+
+      function isMobile() {
+      return 'ontouchstart' in window;
+    }
+
+      if(isMobile){
+         document.addEventListener("DOMContentLoaded", function() {  
+               
+            const mobileToggleElements = document.querySelector(".site-header-menu-button");
+            const mobileMenus = document.querySelectorAll(".navmenu-submenu");
+            mobileMenus.forEach((mobileToggle, index) => {
+              mobileToggleElements.addEventListener("click", function() {
+              //  document.querySelector('.navmenu-button:first').click();
+                mobileMenus[index].classList.add('visibless');
+              });
+            });
+           });
+      }
+    </script>
+    <style>
+      @media(max-width:767px){
+         .navmenu-submenu.navmenu-meganav.visibless {
+            display: block !important;
+               opacity: 1 !important;
+              z-index: 9999999 !important;
+              overflow: visible !important;
+        }
+        li.navmenu-item.navmenu-item-parent.navmenu-id-shop.navmenu-meganav-item-parent.open >a, li.navmenu-item.navmenu-item-parent.navmenu-id-shop.navmenu-meganav-item-parent.open >button {
+            display: none !important;
+        }
+        ul.navmenu.navmenu-depth-1>li>a {
+            display: none;
+        } 
+      }
+      </style>
+   
+    <script src="{{ 'api.js' | asset_url }}"></script>
+
+    {% if preload_styles == 'await_all_styles' %}
+      <link href="{{ 'theme.scss.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+    {% elsif preload_styles == 'await_critical_styles' %}
+      <link href="{{ 'theme-critical.scss.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" data-styles-above-fold />
+      <link rel="preload" as="style" href="{{ 'theme.scss.css' | asset_url }}">
+    {% endif %}
+    
+   
+
+  
+    {% if settings.custom_scripts_head != blank %}
+      {% unless settings.custom_scripts_head contains '<script' %}<script>{% endunless %}
+        {{ settings.custom_scripts_head }}
+      {% unless settings.custom_scripts_head contains '<script' %}</script>{% endunless %}
+    {% endif %}
+  
+    
+ 
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QVVDC08V4E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QVVDC08V4E');
+</script>
+  
+  <script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=SMufpn"></script>  
+
+  
+   <meta name="google-site-verification" content="El3HJWQB7EhzYVRunS4F2ih4khGuG3kL_ROnSGTZYCA" /> 
+    
+    
+   {% if handle contains 'https://www.theneomortal.com/collections/vendors?q=yulani' %}
+<meta name="robots" content="noindex">
+{% endif %} 
+    
+    
+    <script src="{{ 'jquery.min.js' | asset_url }}"></script>
+    <script src="{{ 'custom_menu_js.js' | asset_url }}"></script>
+    
+  
+	{{ shop.metafields.loox["global_html_head"] }}
+
+    <style>
+      @media ( min-width: 768px ){
+        div#site-mobile-nav {
+            display: none;
+        }
+      }
+    </style>
+
+ <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "j7pfsgw24d");
+</script>
+
+
+  {% render 'shogun-head' %}
+</head>
+ <script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=SMufpn"></script>
+
+  <script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>
+<script>
+    var klaviyo = klaviyo || [];
+    klaviyo.init({
+      account: "SMufpn",
+      platform: "shopify"
+    });
+    klaviyo.enable("backinstock",{ 
+    trigger: {
+      product_page_text: "Notify me when available",
+      product_page_class: "btn",
+      product_page_text_align: "centre",
+      product_page_margin: "0px",
+      replace_anchor: false
+    },
+    modal: {
+     headline: "{product_name}",
+     body_content: "Register to receive a notification when this item comes back in stock.",
+     email_field_label: "Email",
+     button_label: "Notify me when available",
+     subscription_success_label: "You're in! We'll let you know when it's back.",
+     footer_content: '',
+     additional_styles: "@import url('https://fonts.googleapis.com/css?family=century gothic');",
+     drop_background_color: "#000",
+     background_color: "#fff",
+     text_color: "#222",
+     button_text_color: "#fff",
+     button_background_color: "#997C54",
+     close_button_color: "#ccc",
+     error_background_color: "#fcd6d7",
+     error_text_color: "#C72E2F",
+     success_background_color: "#d3efcd",
+     success_text_color: "#1B9500"
+    }
+  });
+</script
+ 
+  
+<body
+    
+    {% unless settings.lazy_load %}
+      data-lazy-loading-disabled
+    {% endunless %}
+    class="template-{{ template.name }}"
+    {% if settings.enable_instantpage == true %}
+      data-instant-allow-query-string
+    {% endif %}
+  >
+ <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PLF4BHW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  
+        <a class="skip-to-main" href="#site-main">{{ 'general.accessibility.skip_to_content' | t }}</a>
+    
+    {% section 'static-announcement' %}
+    
+    {% comment %}
+    {% section  'new-announcement' %}
+    {% endcomment %}
+    
+    {% section 'static-utility-bar' %}
+
+    
+    {% section 'static-minimal-header' %}
+    {% section 'yulani-static-minimal-header' %}
+    {% section 'combat-header-section' %}
+    
+    {% comment %}
+      This intersection-target is for the traditional header.
+      It needs to sit outside of the sticky header, so it knows when to collapse
+    {% endcomment %}
+    {% if settings.header_layout == 'traditional' %}
+      <div class="intersection-target"></div>
+    {% endif %}
+
+    <main id="site-main" class="site-main" aria-label="Main content" tabindex="-1">
+      {% if template == 'index' %}
+        {% section 'static-slideshow' %}
+      {% endif %}
+
+      {{ content_for_layout }}
+    </main>
+
+    {% section 'static-footer' %}
+    {% section 'yulani-footer' %}
+    {% section 'combat-footer' %}
+
+    {% comment %}
+      Below are various templates used in JavaScript
+    {% endcomment %}
+    <div style="display: none;" aria-hidden="true" data-templates>
+      {% include 'message-banner' %}
+      {% include 'atc-banner' %}
+    </div>
+
+    {% comment %}
+      Modal container, used on Collections, Password, and QuickShop
+    {% endcomment %}
+    {% include 'modal' %}
+
+    {% comment %}
+      This is the PhotoSwipe dialog for product galleries which needs to be in the base page
+    {% endcomment %}
+    {% include 'product-gallery-zoom' %}
+
+    {% if preload_styles != 'await_all_styles' %}
+      {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+
+      {% if preload_styles == 'await_critical_styles' %}
+        <script>
+          (function(){
+            // remove above the fold styles to make sure there are no style conflicts
+            var aboveFoldStyles = document.querySelector('[data-styles-above-fold]');
+            aboveFoldStyles.parentNode.removeChild(aboveFoldStyles);
+          })();
+        </script>
+      {% endif %}
+    {% endif %}
+
+    {%- if template contains 'customer' -%}
+      {{ 'shopify_common.js' | shopify_asset_url | script_tag }}
+      {{ 'customer_area.js' | shopify_asset_url | script_tag }}
+    {%- endif -%}
+    
+   
+
+    {% assign enable_currency_converter = false %}
+    {% if settings.enable_currency_converter != 'disable' %}
+      {% assign enable_currency_converter = true %}
+    {% endif %}
+    {%
+      include 'currency-converter-settings',
+      display_format: settings.currency_display_format,
+      enable: enable_currency_converter,
+      default_currency: settings.currency_converter_default,
+    %}
+    
+    
+    <script src="{{ theme_script | asset_url }}"
+      data-scripts
+      data-shopify-api-url="{{ 'api.jquery.js' | shopify_asset_url }}"
+      data-shopify-countries="/services/javascripts/countries.js"
+      data-shopify-common="{{ 'shopify_common.js' | shopify_asset_url }}"
+      data-shopify-cart="{{ 'jquery.cart.js' | asset_url }}"
+      data-pxu-polyfills="{{ 'polyfills.js' | asset_url }}"
+    >
+    </script>
+ 
+    {% if settings.custom_styles != blank %}
+      {% unless settings.custom_styles contains '<style' %}<style>{% endunless %}
+        {{ settings.custom_styles }}
+      {% unless settings.custom_styles contains '<style' %}</style>{% endunless %}
+    {% endif %}
+
+    {% if settings.custom_scripts_footer != blank %}
+      {% unless settings.custom_scripts_footer contains '<script' %}<script>{% endunless %}
+        {{ settings.custom_scripts_footer }}
+      {% unless settings.custom_scripts_footer contains '<script' %}</script>{% endunless %}
+    {% endif %}
+
+    {% include 'structured-data' %}
+
+    <script>
+    (function () {
+      function handleFirstTab(e) {
+        if (e.keyCode === 9) { // the "I am a keyboard user" key
+          document.body.classList.add('user-is-tabbing');
+          window.removeEventListener('keydown', handleFirstTab);
+        }
+      }
+      window.addEventListener('keydown', handleFirstTab);
+    })();
+    </script>
+
+    {% include 'api' with 'page:body' %}
+    {{ page_body }}
+
+    
+    {% if settings.enable_instantpage == true %}
+    
+   
+      <script
+        src="{{ 'instantPage.min.js' | asset_url }}"
+        type="module"
+        defer
+      >
+      </script>
+   
+    
+    
+    {% endif %}
+    
+    
+    
+    <!-- Do Not Touch -->
+    <script>
+      $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 50) {
+        $("body").addClass("darkHeader");
+    } else {
+        $("body").removeClass("darkHeader");
+    }
+});
+      
+  $(function() {
+       
+        $('.navmenu-meganav-item-parent').hover( function(){
+          $(this).addClass('open');
+          
+          $(this).find('.navmenu-meganav--desktop').css({'left': '-25px'}); 
+        },
+                             function(){
+          $(this).removeClass('open');
+          
+          $(this).find('.navmenu-meganav--desktop').removeAttr( "style" ); 
+        });
+        
+        $('.site-header-menu-button').click( function(){
+          
+          if($(this).hasClass('active') && $('.site-header--minimal').hasClass('site-header-nav--open') )
+          {
+           $(this).removeClass('active');
+            
+            $('.site-header--minimal').removeClass('site-header-nav--open')
+            
+          }
+          else
+          {
+            $(this).addClass('active');
+            
+            $('.site-header--minimal').addClass('site-header-nav--open')
+          } 
+          
+          
+          
+          
+          
+        })
+        
+});     
+     
+      
+      
+    </script>
+ 
+    <!-- Do Not Touch Ended -->
+    
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+   
+    <script>
+      
+      $(document).on("click",".menu-separate__link", function(e){
+        e.preventDefault();
+        var thishref = $(this).attr("href");
+        var thishandle = $(this).attr("data-menu");
+        if(thishref != "https://www.yulani.com"){
+          var exprietimeNew = new Date();
+          exprietimeNew.setTime(exprietimeNew.getTime() + (60 * 60 * 1000));
+          $.cookie('headermenu', thishandle, {expires: exprietimeNew, path:'/'});
+        }else{
+          $.removeCookie('headermenu', { path: '/' });
+        }
+        location = thishref;
+      });
+      
+      {% if template == "index" %}
+//        $.removeCookie('headermenu', { path: '/' });
+      
+      var exprietimeNew = new Date();
+      exprietimeNew.setTime(exprietimeNew.getTime() + (60 * 60 * 1000));
+      $.cookie('headermenu', "the-neo-mortal", {expires: exprietimeNew, path:'/'});
+      
+      {% endif %}
+      
+      {% if page.handle == "the-neo-mortal" %}
+      var exprietimeNew = new Date();
+      exprietimeNew.setTime(exprietimeNew.getTime() + (60 * 60 * 1000));
+      $.cookie('headermenu', "the-neo-mortal", {expires: exprietimeNew, path:'/'});
+      {% endif %}
+      
+      {% if collection.handle == "hand-combat" %}
+      var exprietimeNew = new Date();
+          exprietimeNew.setTime(exprietimeNew.getTime() + (60 * 60 * 1000));
+      $.cookie('headermenu', "hand-combat", {expires: exprietimeNew, path:'/'});
+      {% endif %}
+      
+      
+       {% if collection.handle == "yulani" %}
+      var exprietimeNew = new Date();
+          exprietimeNew.setTime(exprietimeNew.getTime() + (60 * 60 * 1000));
+      $.cookie('headermenu', "yulani", {expires: exprietimeNew, path:'/'});
+      {% endif %}
+
+
+      {% if page.handle == "yulani" %}
+      var exprietimeNew = new Date();
+          exprietimeNew.setTime(exprietimeNew.getTime() + (60 * 60 * 1000));
+      $.cookie('headermenu', "yulani", {expires: exprietimeNew, path:'/'});
+      {% endif %}
+      
+      var getmenu = $.cookie("headermenu");
+      if(getmenu){
+        $( ".menu-separate__link" ).each(function() {
+
+          var check_attr = $( this ).attr("data-menu");
+          console.log(getmenu);
+          if(check_attr == getmenu){
+            $(this).addClass('active');
+          }
+        });
+      }else{
+        $( ".menu-separate__link" ).each(function() {
+          var hreff = $( this ).attr("href");
+          if(hreff == "https://www.yulani.com"){
+            $(this).addClass('active');
+          }
+        });
+      }
+
+      if(getmenu == "the-neo-mortal"){
+
+        $("#shopify-section-yulani-static-minimal-header").remove();
+        $("#shopify-section-combat-header-section").remove();
+        
+        
+        $("#shopify-section-yulani-footer").remove();
+        $("#shopify-section-combat-footer").remove();
+        
+        $('.static-header').show();
+        
+        
+        $('.static-footer').show();
+        
+        console.log('111' + getmenu);
+        
+      } else if(getmenu == "hand-combat"){
+        $("#shopify-section-static-minimal-header").remove();
+        $("#shopify-section-yulani-static-minimal-header").remove();
+         
+        $("#shopify-section-static-footer").remove();
+        $("#shopify-section-yulani-footer").remove()
+        
+        
+        $('.combat-header').show();
+        
+         $('.combat-footer').show();
+        
+         console.log('222' + getmenu);
+      }
+      else if(getmenu == "yulani"){
+        $("#shopify-section-static-minimal-header").remove();
+         $("#shopify-section-combat-header-section").remove();
+        
+        $("#shopify-section-static-footer").remove();
+        $("#shopify-section-combat-footer").remove()
+        
+         $('.yulani-header').show();
+         $('.yulani-footer').show();
+        
+          console.log('333' + getmenu);
+      }  
+     else
+      {
+
+         var new_url   = window.location.href;  
+
+         var split_url = new_url.split('?');
+         console.log('Current url:'+ split_url[1]);
+
+       var new_menu  = split_url[1];
+
+        if(new_menu == "yul" )
+        {
+                $("#shopify-section-static-minimal-header").remove();
+             $("#shopify-section-combat-header-section").remove();
+            
+            $("#shopify-section-static-footer").remove();
+            $("#shopify-section-combat-footer").remove()
+            
+             $('.yulani-header').show();
+             $('.yulani-footer').show();
+
+                 var exprietimeNew = new Date();
+                exprietimeNew.setTime(exprietimeNew.getTime() + (60 * 60 * 1000));
+            $.cookie('headermenu', "yulani", {expires: exprietimeNew, path:'/'});
+        }
+        else if(new_menu == "hc")
+        {
+              $("#shopify-section-static-minimal-header").remove();
+            $("#shopify-section-yulani-static-minimal-header").remove();
+             
+            $("#shopify-section-static-footer").remove();
+            $("#shopify-section-yulani-footer").remove()
+            
+            
+            $('.combat-header').show();
+            
+             $('.combat-footer').show();
+
+                var exprietimeNew = new Date();
+                exprietimeNew.setTime(exprietimeNew.getTime() + (60 * 60 * 1000));
+            $.cookie('headermenu', "hand-combat", {expires: exprietimeNew, path:'/'});
+        }  
+        else
+        {  
+        $("#shopify-section-yulani-static-minimal-header").remove();
+        $("#shopify-section-combat-header-section").remove();
+        
+        
+        $("#shopify-section-yulani-footer").remove();
+        $("#shopify-section-combat-footer").remove();
+        
+        $('.static-header').show();
+        
+        
+        $('.static-footer').show();
+        }
+        
+      }
+  
+       console.log('all menu' + getmenu);
+ 
+    </script>
+  
+  <!--Code injected by VW Custom Product Tabs-->{% render 'vw-product-tabs-components-1' %}{% render 'vw-product-tabs-components-2' %}{% render 'vw-product-tabs-components-3' %}{% render 'vw-product-tabs-components-4' %}{% render 'vw-product-tabs-components-5' %}{% render 'vw-product-tabs-components-6' %}{% render 'vw-product-tabs-components-7' %}{% render 'vw-product-tabs-components-8' %}{% render 'vw-product-tabs-components-9' %}{% render 'vw-product-tabs-components-10' %}<link href="https://dvjimc2bmh7lo.cloudfront.net/assets/bundle.css?t=1682231629" rel="stylesheet" type="text/css"/><style>.vw-page-tabs { display:none; }</style><!--End of Code-->
+	{{ shop.metafields.loox["global_html_body"] }}
+{% if product %}
+<script>
+window.addEventListener('load', function() {
+var _learnq = window._learnq || [];
+function addedToCart() {
+  fetch(`${window.location.origin}/cart.js`)
+  .then(res => res.clone().json().then(data => {
+    var cart = {
+      total_price: data.total_price/100,
+      $value: data.total_price/100,
+      total_discount: data.total_discount,
+      original_total_price: data.original_total_price/100,
+      items: data.items
+    }
+    if (item !== 'undefined') {
+      cart = Object.assign(cart, item)
+    }
+    if (klAjax) {
+        _learnq.push(['track', 'Added to Cart', cart]);
+        klAjax = false;
+      }
+  }))
+};
+(function (ns, fetch) {
+  ns.fetch = function() {
+    const response = fetch.apply(this, arguments);
+    response.then(res => {
+      if (`${window.location.origin}/cart/add.js`
+      	.includes(res.url)) {
+        	addedToCart()
+      }
+    });
+    return response
+  }
+}(window, window.fetch));
+var klAjax = true;
+var atcButtons = document.querySelectorAll("form[action*='/cart/add'] button[type='submit']");
+for (var i = 0; i < atcButtons.length; i++) {
+    atcButtons[i].addEventListener("click", function() {
+      if (klAjax) {
+        _learnq.push(['track', 'Added to Cart', item]);
+        klAjax = false;
+      }
+    })
+}
+});
+</script>
+ {% endif %} 
+
+
+<style>
+  
+body {
+    overflow-x: hidden;
+}                                                   
+</style>
+
+<!-- speed optimization -->
+<style>
+  .collection--item {
+    height: 404.75px !important;
+  }
+  .collection--item-image {
+   height: 365px !important;
+   }
+  .productgrid--no-spacing .productgrid--item .productitem--image {
+    height: 410px !important;
+  }
+  .productgrid--no-spacing .productgrid--item {
+    height: 527px;
+  }
+  .productgrid--item {
+    transition: none !important;
+  }
+  @media(max-width: 767px){
+  .collection--item-image {
+   height: 191px !important;
+   }
+  .collection--item {
+    height: 230.75px !important;
+  }
+  .productgrid--no-spacing .productgrid--item .productitem--image {
+    height: 392px !important;
+  }
+  }
+</style>
+<!-- speed optimization -->
+  
+{% if template contains 'product' %} 
+
+  {% render 'custom-afterpay' %}
+
+{% endif %}  
+
+{%- if avalabs_optimization -%}  
+<script class="avlabsScriptOptimization">
+const _0x32413f=_0x3990;(function(_0x136d02,_0x3a5795){const _0x540803=_0x3990,_0x44f443=_0x136d02();while(!![]){try{const _0x50d0ed=-parseInt(_0x540803(0xc4))/0x1+parseInt(_0x540803(0xc2))/0x2+parseInt(_0x540803(0xd2))/0x3*(parseInt(_0x540803(0xde))/0x4)+parseInt(_0x540803(0xb8))/0x5+parseInt(_0x540803(0xdf))/0x6+parseInt(_0x540803(0xb7))/0x7+-parseInt(_0x540803(0xe1))/0x8;if(_0x50d0ed===_0x3a5795)break;else _0x44f443['push'](_0x44f443['shift']());}catch(_0x54524d){_0x44f443['push'](_0x44f443['shift']());}}}(_0x725e,0x79704));function loadScript(_0xa70839){return new Promise((_0x4e64fd,_0x9a4036)=>{const _0x20ce7a=_0x3990,_0x14df19=document[_0x20ce7a(0xb4)]('script');Object[_0x20ce7a(0xba)](_0xa70839)[_0x20ce7a(0xd1)](_0x17e003=>{const _0x29eb72=_0x20ce7a;if(_0x17e003==_0x29eb72(0xb1))_0x14df19[_0x29eb72(0xce)]=_0xa70839[_0x17e003];else{if(_0x17e003==='type'){_0x14df19[_0x29eb72(0xc0)]=_0x29eb72(0xcd);if(_0xa70839[_0x17e003]==='text/lazyload')_0x14df19[_0x29eb72(0xb9)]=_0xa70839['innerHTML'];}else _0x14df19[_0x17e003]=_0xa70839[_0x17e003];}}),_0x14df19[_0x20ce7a(0xb5)]=_0x4e64fd,_0x14df19[_0x20ce7a(0xbc)]=_0x4e64fd,_0x14df19['src']?document[_0x20ce7a(0xca)][_0x20ce7a(0xcc)](_0x14df19):(document['body'][_0x20ce7a(0xcc)](_0x14df19),_0x14df19[_0x20ce7a(0xb5)]());});}function lazyLoadScripts(){const _0x9c3cbf=_0x3990,_0x4e0320=document[_0x9c3cbf(0xd9)](_0x9c3cbf(0xbd)),_0xa66966=Array[_0x9c3cbf(0xb2)](_0x4e0320);let _0x2210b5=0x0,_0x439df4=Promise[_0x9c3cbf(0xc3)]();return _0xa66966[_0x9c3cbf(0xd1)](_0x653849=>{const _0x336425=_0x9c3cbf,_0x1fe037=_0x653849[_0x336425(0xbb)](_0x336425(0xb1)),_0x2dfeb2=_0x653849[_0x336425(0xd4)](_0x336425(0xc0))===_0x336425(0xb6);if(_0x1fe037||_0x2dfeb2){const _0xe93805={};for(let _0x21f95d=0x0;_0x21f95d<_0x653849[_0x336425(0xe2)][_0x336425(0xaf)];_0x21f95d++){const _0x2a24ce=_0x653849[_0x336425(0xe2)][_0x21f95d];_0xe93805[_0x2a24ce[_0x336425(0xcb)]]=_0x2a24ce[_0x336425(0xdc)];}_0x653849[_0x336425(0xd3)][_0x336425(0xd8)]()!==''&&(_0xe93805[_0x336425(0xb9)]=_0x653849[_0x336425(0xd3)]['trim']()),_0x439df4=_0x439df4[_0x336425(0xdd)](()=>{return loadScript(_0xe93805);}),_0x2210b5++,_0x653849[_0x336425(0xc8)]();}}),_0x439df4;}function lazyOtherScripts(_0x1bbfe9){const _0x3723bb=_0x3990;let _0x1ad270=Promise['resolve'](),_0x25e5b4=null;if(_0x1bbfe9===_0x3723bb(0xca))textareaForOptimization=document[_0x3723bb(0xdb)]('avlabsOptimizationHead');else _0x1bbfe9===_0x3723bb(0xcf)&&(textareaForOptimization=document[_0x3723bb(0xdb)](_0x3723bb(0xd5)));if(textareaForOptimization){const _0x206495=document[_0x3723bb(0xb4)](_0x3723bb(0xd7));_0x206495[_0x3723bb(0xb9)]=textareaForOptimization[_0x3723bb(0xdc)];const _0x345243=_0x206495['querySelectorAll']('script'),_0x37268c=Array[_0x3723bb(0xb2)](_0x345243);textareaForOptimization[_0x3723bb(0xc8)](),_0x37268c[_0x3723bb(0xd1)](_0x19cc00=>{const _0x1a2aed=_0x3723bb,_0x1fc3a6={};for(let _0x59ece4=0x0;_0x59ece4<_0x19cc00['attributes'][_0x1a2aed(0xaf)];_0x59ece4++){const _0x5eb23a=_0x19cc00[_0x1a2aed(0xe2)][_0x59ece4];_0x1fc3a6[_0x5eb23a[_0x1a2aed(0xcb)]]=_0x5eb23a[_0x1a2aed(0xdc)];}_0x19cc00['textContent'][_0x1a2aed(0xd8)]()!==''&&(_0x1fc3a6[_0x1a2aed(0xb9)]=_0x19cc00[_0x1a2aed(0xd3)][_0x1a2aed(0xd8)]()),_0x1ad270=_0x1ad270['then'](()=>{return loadScript(_0x1fc3a6);});});}return _0x1ad270;}function _0x725e(){const _0x26f23c=['keypress','type','load','1629234KEvfCE','resolve','84697xwGHWR','touchstart','touchmove','attachEvent','remove','keydown','head','name','appendChild','text/javascript','src','body','Error\x20loading\x20scripts:','forEach','417TkMlhZ','textContent','getAttribute','avlabsOptimizationBody','disconnect','div','trim','getElementsByTagName','catch','getElementById','value','then','15076BqhTRW','4818522VNcoGH','mousemove','22611192sEeTCO','attributes','length','mousedown','data-src','from','addEventListener','createElement','onload','text/lazyload','2321263QcvVcm','4676520agrwzL','innerHTML','keys','hasAttribute','onerror','script','error'];_0x725e=function(){return _0x26f23c;};return _0x725e();}let script_loaded=![];function loadJSscripts(){const _0x161e63=_0x3990;!script_loaded&&(avlabs_observer[_0x161e63(0xd6)](),script_loaded=!![],clearTimeout(loadScriptTimer),lazyLoadScripts()['then'](()=>{const _0x58d23d=_0x161e63;lazyOtherScripts('head')[_0x58d23d(0xdd)](()=>{const _0x4b783b=_0x58d23d;lazyOtherScripts(_0x4b783b(0xcf))['then'](()=>{})['catch'](_0x4bd9e2=>{const _0x20ab5c=_0x4b783b;console['error'](_0x20ab5c(0xd0),_0x4bd9e2);});})[_0x58d23d(0xda)](_0x21966b=>{const _0x43f7b5=_0x58d23d;console[_0x43f7b5(0xbe)](_0x43f7b5(0xd0),_0x21966b);});})[_0x161e63(0xda)](_0x31e52e=>{const _0x3b00c2=_0x161e63;console[_0x3b00c2(0xbe)](_0x3b00c2(0xd0),_0x31e52e);}));}const loadScriptTimer=setTimeout(loadJSscripts,0x1f40),activityEvents=[_0x32413f(0xb0),_0x32413f(0xe0),_0x32413f(0xc9),'scroll',_0x32413f(0xc5),'click',_0x32413f(0xbf),_0x32413f(0xc6)];activityEvents[_0x32413f(0xd1)](function(_0x2e8f74){window['addEventListener'](_0x2e8f74,loadJSscripts,![]);});function _0x3990(_0xbacdcf,_0x2f43c1){const _0x725e7f=_0x725e();return _0x3990=function(_0x3990e7,_0x22a666){_0x3990e7=_0x3990e7-0xaf;let _0x269749=_0x725e7f[_0x3990e7];return _0x269749;},_0x3990(_0xbacdcf,_0x2f43c1);}if(window[_0x32413f(0xb3)])window['addEventListener'](_0x32413f(0xc1),function(){},![]);else window[_0x32413f(0xc7)]?window[_0x32413f(0xc7)](_0x32413f(0xb5),function(){}):window[_0x32413f(0xb5)]=function(){};
+
+</script>
+
+{%- endif -%}
+
+{% comment %}{%- if avalabs_optimization -%}
+<script type="text/lazyload">
+   if (avlabs_mobile_menu_clicked) {
+    setTimeout(function () {
+        jQuery(".icon-menu ").trigger("click");
+    }, 1000);
+}
+</script>
+<script> var avlabs_mobile_menu_clicked = false;
+var avlabs_mobile_menu = document.querySelector(
+  ".icon-menu "
+);
+avlabs_mobile_menu.addEventListener("click", function () {
+  avlabs_mobile_menu_clicked = true;
+}); </script>
+{%- endif -%}{% endcomment %}
+  
+{%- if avalabs_optimization -%}
+  <script type="text/lazyload">
+   if (avlabs_search_icon_clicked) {
+    setTimeout(function () {
+        jQuery(".search-icon").trigger("click");
+    }, 1000);
+}
+  </script>
+  <script> var avlabs_search_icon_clicked = false;
+var avlabs_search_icon = document.querySelector(
+  ".search-icon"
+);
+avlabs_search_icon.addEventListener("click", function () {
+  avlabs_search_icon_clicked = true;
+}); </script>
+{%- endif -%}
+</body>
+</html>
+{% endcapture %}
+ {%- if avalabs_optimization -%}
+{{ pageContent 
+   | replace: "<script src=", "<script data-src=" 
+| replace: 'type="text/javascript" src=', ' type="text/javascript" data-src='
+| replace: 'defer="defer" src=' , 'defer="defer" data-src='
+| replace : "<script async src=" , '<script async data-src='
+| replace : 'async="" src='  , 'async="" data-src='
+| replace : '</head>' , '<textarea id="avlabsOptimizationHead" style="display:none"></head></textarea></head>'
+
+}}
+{%- else -%}
+ {{ pageContent }}
+{% endif %}
+

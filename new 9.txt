@@ -1,0 +1,154 @@
+/wp-content/plugins/thrive-visual-editor/editor/js/dist/modules/search-form.min.js
+/wp-content/plugins/thrive-visual-editor/editor/js/dist/modules/menu.min.js
+/wp-content/plugins/thrive-visual-editor/editor/js/dist/modules/social-share.min.js
+/wp-content/plugins/thrive-visual-editor/editor/js/dist/modules/video.min.js
+/wp-content/plugins/thrive-visual-editor/editor/js/dist/modules/divider.min.js
+/wp-content/plugins/thrive-visual-editor/editor/js/dist/modules/post-list.min.js
+/wp-content/plugins/thrive-visual-editor/editor/js/dist/modules/toc.min.js
+/wp-content/plugins/thrive-visual-editor/editor/js/dist/modules/post-grid-compat.min.js
+/wp-content/plugins/thrive-visual-editor/editor/js/dist/modules/dropdown.min.js
+/wp-content/plugins/thrive-visual-editor/editor/js/dist/modules/tabs.min.js
+/wp-content/plugins/thrive-visual-editor/editor/js/dist/modules/pagination.min.js
+/wp-content/plugins/thrive-visual-editor/editor/js/dist/modules/lead-generation.min.js
+/wp-content/plugins/thrive-visual-editor/editor/js/dist/image-gallery-libs.min.js
+/wp-content/plugins/thrive-visual-editor/editor/js/dist/modules/toggle.min.js
+/wp-content/plugins/thrive-visual-editor/editor/js/dist/modules/general.min.js
+
+
+
+Critical Css After Rocket
+body:not(.tve_editor_page) .tve_post_grid_masonry {
+    opacity: 1;
+    transition: none !important;
+}
+
+
+body {
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    letter-spacing: normal;
+}
+
+@media (min-width: 300px){
+[data-css="tve-u-17038f1cce5"] > .tcb-flex-col {
+    padding-left: 0px !important;
+}}
+body:not(.defaults) {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    padding: 5px 0 10px 0;
+}
+
+home
+
+html .tcb-style-wrap strong {
+    color: rgb(106 107 108) !important;
+--tcb-applied-color: auto !important;
+}
+
+.tcb-style-wrap strong{
+font-weight:500 !important
+}
+@media(max-width: 769px){
+.tve_image_caption .tve_image {
+    min-height: 57px;
+}}
+
+@media (max-width: 767px){
+:not(#tve) [data-css="tve-u-17fc8f4ab60"] {
+    min-height: 112px;
+}}
+
+@media (max-width: 767px){
+:not(#tve) [data-css="tve-u-17fc8f529b6"] {
+    min-height: 162px;
+    height: 162px !important;
+}}
+
+@media (max-width: 767px){
+[data-css="tve-u-17c8b6f11aa"] {
+    min-height: 76px;
+}}
+
+@media (min-width: 300px){
+:not(#tve) [data-css="tve-u-17fc8f529b6"] {
+    font-size: 24px !important;
+    text-transform: capitalize !important;
+    line-height: 1.25em !important;
+}}
+
+
+
+page-id-2254
+a {
+    background-color: transparent;
+    color: #008fff;
+    line-height: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+}
+
+@media (max-width: 1023px){
+html [data-css="tve-u-17038f1cce5"] > .tcb-flex-col {
+    padding-left: 15px !important;
+}}
+
+Cloudflare:
+Global API key: 84cd70db5795e95ac65dd25cccd001467464b
+Zone Id: ee2220197cec72af56233bf92a2e44cb
+E-mail: mailto:amber@propertydevelopmentsystem.com
+--------------------------------------------------------------------------
+Cloudflare login access: 
+mailto:kavita.upworkdev@gmail.com
+Kavita@123#456_
+--------------------------------------------------------------------------
+https://identity.wpengine.com/
+mailto:kavita.upworkdev@gmail.com
+Kavita@123#456_
+-------------------------------------------------------------------------
+SFTP
+SFTP Address: sftp://leaddeveloper7.sftp.wpengine.com
+leaddeveloper7-kavita
+@Y84auHo@PCrKBXa
+2222
+-------------------------------------------------------------------------
+https://leaddeveloper.com/wp-admin/
+mailto:kavita.upworkdev@gmail.com
+Kavita@123#456_
+-------------------------------------------------------------------------
+
+
+
+@media (max-width: 1023px){
+html [data-css="tve-u-17038f1cce5"] > .tcb-flex-col {
+    padding-left: 15px !important;
+}}
+
+@media (min-width: 300px){
+[data-css="tve-u-17038f1cce5"] > .tcb-flex-col {
+    padding-left: 0px !important;
+}}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}

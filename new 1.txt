@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MC6L9FL');</script>
+<!-- End Google Tag Manager -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-type" content="text/html; charset=<?php bloginfo('charset'); ?>" />
+	<title><?php bloginfo('name'); ?></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/style.css' . '?ver="1.0.0"' ; ?>" type="text/css" media="screen" />
+<!--   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/css/_jquery-ui.css' ?>" type="text/css" media="screen" />
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/slider/jquery.bxslider.css' ?>" type="text/css" media="screen" />
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/css/animate.css' ?>" type="text/css" media="screen" />
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/css/newStyle.css' ?>" type="text/css" media="screen" /> -->
+  <?php if ( is_page(1205) ) : ?>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <?php endif; ?>
+<?php wp_head(); ?>
+<script>
+setTimeout(function(){
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-31273119-3', 'auto');
+  ga('send', 'pageview');
+  setTimeout("ga('send', 'event', 'NoBounce', 'Over 10 seconds')",10000);
+  setTimeout("ga('send', 'event', 'NoBounce', 'Over 30 seconds')",30000);
+    }, 4000);
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+setTimeout(function(){
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '286624565020781');
+  fbq('track', 'PageView');
+  }, 3000);
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=286624565020781&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+</head>
+<body <?php body_class(); ?>>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MC6L9FL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="fb-root"></div>
+<div id="burger">
+	<span>&nbsp;</span>
+	<span>&nbsp;</span>
+	<span>&nbsp;</span>
+</div>
+<div id="wrapper">
+	<div class="wielkosc_strony group"><div class="wrapper">
+		<div class="container">
+			<div class="logo">
+				<a href="<?php bloginfo('url'); ?>">
+					<img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="Numerika - Kursy obsługi i programowania obrabiarek CNC">
+				</a>
+			</div>
+			<div id="mobilenav">
+				<ul class="menu">
+					<?php wp_nav_menu( array('theme_location'=>'main_menu', 'container' => 'false', 'items_wrap' => '%3$s')); ?>
+				</ul>
+			</div>
+		</div>
+	</div></div><!--wrapper-->
+<?php if ( is_front_page() ) : ?>
+
+  <?php $termsArray = []; ?>
+
+  <div class="course-bar course-bar--full course-bar--dark">
+    <div class="wrapper">
+
+      <div class="price-box" style="padding-top:10px">
+
+        NAJBLIŻSZY KURS CNC
+
+      </div>
+
+      <div class="price-box-mobile" style="padding-top:10px">
+
+        NAJBLIŻSZE TERMINY - KURS CNC
+
+      </div>
+
+      <?php if ( have_rows( 'months', 1159 ) ) : ?>
+        <?php while( have_rows( 'months', 1159 ) ) : the_row(); ?>
+
+            <?php if ( have_rows( 'term' ) ) : ?>
+              <?php while( have_rows( 'term' ) ) : the_row(); ?>
+                <?php
+                  $termin = get_sub_field( 'term-date' );
+                  $wolneMiejsca = get_sub_field( 'term-book' );
+                ?>
+
+                <?php if ( $wolneMiejsca >= 0) : ?>
+                  <?php array_push($termsArray, array('termin'=>$termin, 'miejsca'=>$wolneMiejsca)) ?>
+                <?php endif; ?>
+
+              <?php endwhile; ?>
+            <?php endif; ?>
+
+        <?php endwhile; ?>
+      <?php endif; ?>
+
+      <?php for ( $i = 0; $i < 3; $i++ ) : ?>
+
+        <?php
+          $wolneMiejsca = $termsArray[$i]['miejsca'];
+          $termin = $termsArray[$i]['termin'];
+        ?>
+
+          <div id="course-1159" class="course-box course-box__next course-<?= $wolneMiejsca == 0 ? 'no-place' : 'available-place'; ?>">
+
+            <div class="course__button" data-slots="<?= $wolneMiejsca ?>">
+
+                <div class="course__cell course__info">
+
+                    <span class="course__date text-right"><?= $termin; ?></span>
+                    <span class="course__static-text course__static-text--mobile text-right"><b>(wolne miejsca: <?= $wolneMiejsca ?>)</b></span>
+                    <span class="course__static-text text-right">wolne miejsca:</span>
+
+                </div>
+
+                <div class="course__cell course__places course__<?= $wolneMiejsca > 4 ? 'available-place' : 'no-place'; ?>">
+
+                    <span><?= $wolneMiejsca; ?></span>
+
+                </div>
+
+                <div class="course__cell course__places--mobile course__<?= $wolneMiejsca > 4 ? 'available-place' : 'no-place'; ?>">
+
+                    <a href="<?php the_permalink(1205) ?>">Skonfiguruj</a>
+
+                </div>
+
+            </div>
+
+          </div>
+
+      <?php endfor; ?>
+
+      <a href="<?php the_permalink(1205) ?>" class="see-more-link">
+        Dalsze terminy
+      </a>
+
+      <a class="save-on" href="<?php the_permalink(1205) ?>">
+        Skonfiguruj swój kurs
+        <img src="<?= tempDir().'/images/w-prawo@2.png' ?>"
+             alt=""
+             width="6"
+             height="10"
+             >
+      </a>
+    </div>
+  </div>
+
+<?php elseif ( is_page( 31 ) ) : ?>
+
+  <?php $termsArray = []; ?>
+
+  <div class="course-bar course-bar--full course-bar--dark">
+    <div class="wrapper">
+
+      <div class="price-box">
+
+        <div class="price-box__title">
+          Cena
+          <br>
+          Kursu:
+        </div>
+        <div class="price-box__pln">
+          <?php the_field( 'price', 1159 ) ?>
+        </div>
+
+      </div>
+
+      <div class="price-box-mobile" style="padding-top:10px">
+
+        NAJBLIŻSZE TERMINY - OPERATOR PROGRAMISTA CNC
+
+      </div>
+
+      <?php if ( have_rows( 'months', 1159 ) ) : ?>
+        <?php while( have_rows( 'months', 1159 ) ) : the_row(); ?>
+
+            <?php if ( have_rows( 'term' ) ) : ?>
+              <?php while( have_rows( 'term' ) ) : the_row(); ?>
+                <?php
+                  $termin = get_sub_field( 'term-date' );
+                  $wolneMiejsca = get_sub_field( 'term-book' );
+                ?>
+
+                <?php if ( $wolneMiejsca > 0) : ?>
+                  <?php array_push($termsArray, array('termin'=>$termin, 'miejsca'=>$wolneMiejsca)) ?>
+                <?php endif; ?>
+
+              <?php endwhile; ?>
+            <?php endif; ?>
+
+        <?php endwhile; ?>
+      <?php endif; ?>
+
+      <?php for ( $i = 0; $i < 3; $i++ ) : ?>
+
+        <?php
+          $wolneMiejsca = $termsArray[$i]['miejsca'];
+          $termin = $termsArray[$i]['termin'];
+        ?>
+
+        <?php if ( $wolneMiejsca ): ?>
+
+          <div id="course-1159" class="course-box course-box__next course-<?= $wolneMiejsca == 0 ? 'no-place' : 'available-place'; ?>">
+
+            <div class="course__button" data-slots="<?= $wolneMiejsca ?>">
+
+                <div class="course__cell course__info">
+
+                    <span class="course__date text-right"><?= $termin; ?></span>
+                    <span class="course__static-text course__static-text--mobile text-right"><b>(wolne miejsca: <?= $wolneMiejsca ?>)</b></span>
+                    <span class="course__static-text text-right">wolne miejsca:</span>
+
+                </div>
+
+                <div class="course__cell course__places course__<?= $wolneMiejsca > 4 ? 'available-place' : 'no-place'; ?>">
+
+                    <span><?= $wolneMiejsca; ?></span>
+
+                </div>
+
+                <div class="course__cell course__places--mobile course__<?= $wolneMiejsca > 4 ? 'available-place' : 'no-place'; ?>">
+
+                    <a href="<?php the_permalink(1205) ?>">Skonfiguruj</a>
+
+                </div>
+
+            </div>
+
+          </div>
+
+        <?php endif ?>
+
+      <?php endfor; ?>
+
+      <a href="<?php the_permalink(1205) ?>" class="see-more-link">
+        Dalsze terminy
+      </a>
+
+      <a class="save-on" href="<?php the_permalink(1205) ?>">
+        Skonfiguruj swój kurs
+        <img src="<?= tempDir().'/images/w-prawo@2.png' ?>"
+             alt=""
+             width="6"
+             height="10"
+             >
+      </a>
+
+    </div>
+  </div>
+  <div class="page_menu">
+  <div class="wrapper">
+
+    <div class="single">
+      <a href="<?php echo get_page_link(1221); ?>">
+        <p>Zobacz nasz podobny kurs:</p>
+        <h2><?php echo get_the_title(1221);?></h2>
+      </a>
+    </div>
+    <div class="single">
+      <a href="<?php echo get_page_link(1445); ?>">
+        <p>Zobacz nasz podobny kurs:</p>
+        <h2><?php echo get_the_title(1445);?></h2>
+      </a>
+    </div>
+  </div>
+  </div>
+
+<?php elseif ( is_page( 354 ) ) : ?>
+
+  <?php $termsArray = []; ?>
+
+  <div class="course-bar course-bar--full course-bar--dark">
+    <div class="wrapper">
+
+      <div class="price-box">
+
+        <div class="price-box__title">
+          Cena
+          <br>
+          Kursu:
+        </div>
+        <div class="price-box__pln">
+          <?php the_field( 'price', 1209 ) ?>
+        </div>
+
+      </div>
+
+      <div class="price-box-mobile" style="padding-top:10px">
+
+        NAJBLIŻSZE TERMINY - PROGRAMISTA CAM
+
+      </div>
+
+      <?php if ( have_rows( 'months', 1209 ) ) : ?>
+        <?php while( have_rows( 'months', 1209 ) ) : the_row(); ?>
+
+            <?php if ( have_rows( 'term' ) ) : ?>
+              <?php while( have_rows( 'term' ) ) : the_row(); ?>
+                <?php
+                  $termin = get_sub_field( 'term-date' );
+                  $wolneMiejsca = get_sub_field( 'term-book' );
+                ?>
+
+                <?php if ( $wolneMiejsca > 0) : ?>
+                  <?php array_push($termsArray, array('termin'=>$termin, 'miejsca'=>$wolneMiejsca)) ?>
+                <?php endif; ?>
+
+              <?php endwhile; ?>
+            <?php endif; ?>
+
+        <?php endwhile; ?>
+      <?php endif; ?>
+
+      <?php for ( $i = 0; $i < 3; $i++ ) : ?>
+
+        <?php
+          $wolneMiejsca = $termsArray[$i]['miejsca'];
+          $termin = $termsArray[$i]['termin'];
+        ?>
+
+        <?php if ( $wolneMiejsca ) : ?>
+
+          <div id="course-1209" class="course-box course-box__next course-<?= $wolneMiejsca == 0 ? 'no-place' : 'available-place'; ?>">
+
+            <div class="course__button" data-slots="<?= $wolneMiejsca ?>">
+
+                <div class="course__cell course__info">
+
+                    <span class="course__date text-right"><?= $termin; ?></span>
+                    <span class="course__static-text course__static-text--mobile text-right"><b>(wolne miejsca: <?= $wolneMiejsca ?>)</b></span>
+                    <span class="course__static-text text-right">wolne miejsca:</span>
+
+                </div>
+
+                <div class="course__cell course__places course__<?= $wolneMiejsca > 4 ? 'available-place' : 'no-place'; ?>">
+
+                    <span><?= $wolneMiejsca; ?></span>
+
+                </div>
+
+                <div class="course__cell course__places--mobile course__<?= $wolneMiejsca > 4 ? 'available-place' : 'no-place'; ?>">
+
+                    <a href="<?php the_permalink(1205) ?>">Skonfiguruj</a>
+
+                </div>
+
+            </div>
+
+          </div>
+
+        <?php endif ?>
+
+      <?php endfor; ?>
+
+      <a href="<?php the_permalink(1205) ?>" class="see-more-link">
+        Dalsze terminy
+      </a>
+
+      <a class="save-on" href="<?php the_permalink(1205) ?>">
+        Skonfiguruj swój kurs
+        <img src="<?= tempDir().'/images/w-prawo@2.png' ?>"
+             alt=""
+             width="6"
+             height="10"
+             >
+      </a>
+
+    </div>
+  </div>
+  <div class="page_menu three-menu">
+  <div class="wrapper">
+
+    <div class="single">
+      <a href="<?php echo get_page_link(1221); ?>">
+        <p>Zobacz nasz podobny kurs:</p>
+        <h2><?php echo get_the_title(1221);?></h2>
+      </a>
+    </div>
+	<div class="single">
+	  <a href="<?php echo get_page_link(31); ?>">
+		<p>Zobacz nasz podobny kurs:</p>
+		<h2><?php echo get_the_title(31);?></h2>
+	  </a>
+	</div>
+    <div class="single">
+      <a href="<?php echo get_page_link(1445); ?>">
+        <p>Zobacz nasz podobny kurs:</p>
+        <h2><?php echo get_the_title(1445);?></h2>
+      </a>
+    </div>
+  </div>
+  </div>
+<?php elseif ( is_page( 1445 ) ) : ?>
+
+  <?php $termsArray = []; ?>
+
+  <div class="course-bar course-bar--full course-bar--dark">
+    <div class="wrapper">
+
+      <div class="price-box">
+
+        <div class="price-box__title">
+          Cena
+          <br>
+          Kursu:
+        </div>
+        <div class="price-box__pln">
+          <?php the_field( 'price', 1211 ) ?>
+        </div>
+
+      </div>
+
+      <div class="price-box-mobile" style="padding-top:10px">
+
+        NAJBLIŻSZE TERMINY - Heidenhain + 5 osi
+
+      </div>
+
+      <?php if ( have_rows( 'months', 1211 ) ) : ?>
+        <?php while( have_rows( 'months', 1211 ) ) : the_row(); ?>
+
+            <?php if ( have_rows( 'term' ) ) : ?>
+              <?php while( have_rows( 'term' ) ) : the_row(); ?>
+                <?php
+                  $termin = get_sub_field( 'term-date' );
+                  $wolneMiejsca = get_sub_field( 'term-book' );
+                ?>
+
+                <?php if ( $wolneMiejsca > 0) : ?>
+                  <?php array_push($termsArray, array('termin'=>$termin, 'miejsca'=>$wolneMiejsca)) ?>
+                <?php endif; ?>
+
+              <?php endwhile; ?>
+            <?php endif; ?>
+
+        <?php endwhile; ?>
+      <?php endif; ?>
+
+      <?php for ( $i = 0; $i < 3; $i++ ) : ?>
+
+        <?php
+          $wolneMiejsca = $termsArray[$i]['miejsca'];
+          $termin = $termsArray[$i]['termin'];
+        ?>
+
+        <?php if ( $wolneMiejsca ) : ?>
+
+          <div id="course-1209" class="course-box course-box__next course-<?= $wolneMiejsca == 0 ? 'no-place' : 'available-place'; ?>">
+
+            <div class="course__button" data-slots="<?= $wolneMiejsca ?>">
+
+                <div class="course__cell course__info">
+
+                    <span class="course__date text-right"><?= $termin; ?></span>
+                    <span class="course__static-text course__static-text--mobile text-right"><b>(wolne miejsca: <?= $wolneMiejsca ?>)</b></span>
+                    <span class="course__static-text text-right">wolne miejsca:</span>
+
+                </div>
+
+                <div class="course__cell course__places course__<?= $wolneMiejsca > 4 ? 'available-place' : 'no-place'; ?>">
+
+                    <span><?= $wolneMiejsca; ?></span>
+
+                </div>
+
+                <div class="course__cell course__places--mobile course__<?= $wolneMiejsca > 4 ? 'available-place' : 'no-place'; ?>">
+
+                    <a href="<?php the_permalink(1205) ?>">Skonfiguruj</a>
+
+                </div>
+
+            </div>
+
+          </div>
+
+        <?php endif ?>
+
+      <?php endfor; ?>
+
+      <a href="<?php the_permalink(1205) ?>" class="see-more-link">
+        Dalsze terminy
+      </a>
+
+      <a class="save-on" href="<?php the_permalink(1205) ?>">
+        Skonfiguruj swój kurs
+        <img src="<?= tempDir().'/images/w-prawo@2.png' ?>"
+             alt=""
+             width="6"
+             height="10"
+             >
+      </a>
+
+    </div>
+  </div>
+  <?php elseif ( is_page( 2111 ) ) : ?>
+  
+  
+    <?php $termsArray = []; ?>
+  
+  
+  
+  
+  
+  <div class="course-bar course-bar--full course-bar--dark">
+    <div class="wrapper">
+
+      <div class="price-box">
+
+        <div class="price-box__title">
+          Cena
+          <br>
+          Kursu:
+        </div>
+        <div class="price-box__pln">
+          <?php the_field( 'price', 2110 ) ?>
+        </div>
+
+      </div>
+
+      <div class="price-box-mobile" style="padding-top:10px">
+
+        NAJBLIŻSZE TERMINY - Technolog CNC
+
+      </div>
+
+      <?php if ( have_rows( 'months', 2110 ) ) : ?>
+        <?php while( have_rows( 'months', 2110 ) ) : the_row(); ?>
+
+            <?php if ( have_rows( 'term' ) ) : ?>
+              <?php while( have_rows( 'term' ) ) : the_row(); ?>
+                <?php
+                  $termin = get_sub_field( 'term-date' );
+                  $wolneMiejsca = get_sub_field( 'term-book' );
+                ?>
+
+                <?php if ( $wolneMiejsca > 0) : ?>
+                  <?php array_push($termsArray, array('termin'=>$termin, 'miejsca'=>$wolneMiejsca)) ?>
+                <?php endif; ?>
+
+              <?php endwhile; ?>
+            <?php endif; ?>
+
+        <?php endwhile; ?>
+      <?php endif; ?>
+
+      <?php for ( $i = 0; $i < 3; $i++ ) : ?>
+
+        <?php
+          $wolneMiejsca = $termsArray[$i]['miejsca'];
+          $termin = $termsArray[$i]['termin'];
+        ?>
+
+        <?php if ( $wolneMiejsca ) : ?>
+
+          <div id="course-2110" class="course-box course-box__next course-<?= $wolneMiejsca == 0 ? 'no-place' : 'available-place'; ?>">
+
+            <div class="course__button" data-slots="<?= $wolneMiejsca ?>">
+
+                <div class="course__cell course__info">
+
+                    <span class="course__date text-right"><?= $termin; ?></span>
+                    <span class="course__static-text course__static-text--mobile text-right"><b>(wolne miejsca: <?= $wolneMiejsca ?>)</b></span>
+                    <span class="course__static-text text-right">wolne miejsca:</span>
+
+                </div>
+
+                <div class="course__cell course__places course__<?= $wolneMiejsca > 4 ? 'available-place' : 'no-place'; ?>">
+
+                    <span><?= $wolneMiejsca; ?></span>
+
+                </div>
+
+                <div class="course__cell course__places--mobile course__<?= $wolneMiejsca > 4 ? 'available-place' : 'no-place'; ?>">
+
+                    <a href="<?php the_permalink(1205) ?>">Skonfiguruj</a>
+
+                </div>
+
+            </div>
+
+          </div>
+
+        <?php endif ?>
+
+      <?php endfor; ?>
+
+      <a href="<?php the_permalink(1205) ?>" class="see-more-link">
+        Dalsze terminy
+      </a>
+
+      <a class="save-on" href="<?php the_permalink(1205) ?>">
+        Skonfiguruj swój kurs
+        <img src="<?= tempDir().'/images/w-prawo@2.png' ?>"
+             alt=""
+             width="6"
+             height="10"
+             >
+      </a>
+
+    </div>
+  </div>
+  
+  
+    <?php elseif ( is_page( 2338 ) ) : ?>
+  
+  
+    <?php $termsArray = []; ?>
+  
+  
+  
+  
+  
+    <div class="course-bar course-bar--full course-bar--dark">
+    <div class="wrapper">
+
+      <div class="price-box">
+
+        <div class="price-box__title">
+          Cena
+          <br>
+          Kursu:
+        </div>
+        <div class="price-box__pln">
+          <?php the_field( 'price', 2337 ) ?>
+        </div>
+
+      </div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+
+
+      <div class="price-box-mobile" style="padding-top:10px">
+
+        NAJBLIŻSZE TERMINY - Rysunek techniczny i pomiary warsztatowe
+
+      </div>
+
+      <?php if ( have_rows( 'months', 2337 ) ) : ?>
+        <?php while( have_rows( 'months', 2337 ) ) : the_row(); ?>
+
+            <?php if ( have_rows( 'term' ) ) : ?>
+              <?php while( have_rows( 'term' ) ) : the_row(); ?>
+                <?php
+                  $termin = get_sub_field( 'term-date' );
+                  $wolneMiejsca = get_sub_field( 'term-book' );
+                ?>
+
+                <?php if ( $wolneMiejsca > 0) : ?>
+                  <?php array_push($termsArray, array('termin'=>$termin, 'miejsca'=>$wolneMiejsca)) ?>
+                <?php endif; ?>
+
+              <?php endwhile; ?>
+            <?php endif; ?>
+
+        <?php endwhile; ?>
+      <?php endif; ?>
+
+      <?php for ( $i = 0; $i < 3; $i++ ) : ?>
+
+        <?php
+          $wolneMiejsca = $termsArray[$i]['miejsca'];
+          $termin = $termsArray[$i]['termin'];
+        ?>
+
+        <?php if ( $wolneMiejsca ) : ?>
+
+          <div id="course-2337" class="course-box course-box__next course-<?= $wolneMiejsca == 0 ? 'no-place' : 'available-place'; ?>">
+
+            <div class="course__button" data-slots="<?= $wolneMiejsca ?>">
+
+                <div class="course__cell course__info">
+
+                    <span class="course__date text-right"><?= $termin; ?></span>
+                    <span class="course__static-text course__static-text--mobile text-right"><b>(wolne miejsca: <?= $wolneMiejsca ?>)</b></span>
+                    <span class="course__static-text text-right">wolne miejsca:</span>
+
+                </div>
+
+                <div class="course__cell course__places course__<?= $wolneMiejsca > 4 ? 'available-place' : 'no-place'; ?>">
+
+                    <span><?= $wolneMiejsca; ?></span>
+
+                </div>
+
+                <div class="course__cell course__places--mobile course__<?= $wolneMiejsca > 4 ? 'available-place' : 'no-place'; ?>">
+
+                    <a href="<?php the_permalink(1205) ?>">Skonfiguruj</a>
+
+                </div>
+
+            </div>
+
+          </div>
+
+        <?php endif ?>
+
+      <?php endfor; ?>
+
+      <a href="<?php the_permalink(1205) ?>" class="see-more-link">
+        Dalsze terminy
+      </a>
+
+      <a class="save-on" href="<?php the_permalink(1205) ?>">
+        Skonfiguruj swój kurs
+        <img src="<?= tempDir().'/images/w-prawo@2.png' ?>"
+             alt=""
+             width="6"
+             height="10"
+             >
+      </a>
+
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="page_menu">
+  <div class="wrapper">
+
+    <div class="single">
+      <a href="<?php echo get_page_link(1221); ?>">
+        <p>Zobacz nasz podobny kurs:</p>
+        <h2><?php echo get_the_title(1221);?></h2>
+      </a>
+    </div>
+    <div class="single">
+      <a href="<?php echo get_page_link(31); ?>">
+        <p>Zobacz nasz podobny kurs:</p>
+        <h2><?php echo get_the_title(31);?></h2>
+      </a>
+    </div>
+  </div>
+  </div>
+<?php elseif ( is_page( 1221 ) ) : ?>
+
+  <?php $termsArray = []; ?>
+
+  <div class="course-bar course-bar--full course-bar--dark">
+    <div class="wrapper">
+
+      <div class="price-box">
+
+        <div class="price-box__title">
+          Cena
+          <br>
+          Kursu:
+        </div>
+        <div class="price-box__pln">
+          <?php the_field( 'price', 1225 ) ?>
+        </div>
+
+      </div>
+
+      <div class="price-box-mobile" style="padding-top:10px">
+
+        NAJBLIŻSZE TERMINY - OPERATOR CNC
+
+      </div>
+
+      <?php if ( have_rows( 'months', 1225 ) ) : ?>
+        <?php while( have_rows( 'months', 1225 ) ) : the_row(); ?>
+
+            <?php if ( have_rows( 'term' ) ) : ?>
+              <?php while( have_rows( 'term' ) ) : the_row(); ?>
+                <?php
+                  $termin = get_sub_field( 'term-date' );
+                  $wolneMiejsca = get_sub_field( 'term-book' );
+                ?>
+
+                <?php if ( $wolneMiejsca > 0) : ?>
+                  <?php array_push($termsArray, array('termin'=>$termin, 'miejsca'=>$wolneMiejsca)) ?>
+                <?php endif; ?>
+
+              <?php endwhile; ?>
+            <?php endif; ?>
+
+        <?php endwhile; ?>
+      <?php endif; ?>
+
+      <?php for ( $i = 0; $i < 3; $i++ ) : ?>
+
+        <?php
+          $wolneMiejsca = $termsArray[$i]['miejsca'];
+          $termin = $termsArray[$i]['termin'];
+        ?>
+
+        <?php if ( $wolneMiejsca ) : ?>
+
+          <div id="course-1209" class="course-box course-box__next course-<?= $wolneMiejsca == 0 ? 'no-place' : 'available-place'; ?>">
+
+            <div class="course__button" data-slots="<?= $wolneMiejsca ?>">
+
+                <div class="course__cell course__info">
+
+                    <span class="course__date text-right"><?= $termin; ?></span>
+                    <span class="course__static-text course__static-text--mobile text-right"><b>(wolne miejsca: <?= $wolneMiejsca ?>)</b></span>
+                    <span class="course__static-text text-right">wolne miejsca:</span>
+
+                </div>
+
+                <div class="course__cell course__places course__<?= $wolneMiejsca > 4 ? 'available-place' : 'no-place'; ?>">
+
+                    <span><?= $wolneMiejsca; ?></span>
+
+                </div>
+
+                <div class="course__cell course__places--mobile course__<?= $wolneMiejsca > 4 ? 'available-place' : 'no-place'; ?>">
+
+                    <a href="<?php the_permalink(1205) ?>">Skonfiguruj</a>
+
+                </div>
+
+            </div>
+
+          </div>
+
+        <?php endif ?>
+
+      <?php endfor; ?>
+
+      <a href="<?php the_permalink(1205) ?>" class="see-more-link">
+        Zobacz Dalsze terminy
+      </a>
+
+      <a class="save-on" href="<?php the_permalink(1205) ?>">
+        Skonfiguruj swój kurs
+        <img src="<?= tempDir().'/images/w-prawo@2.png' ?>"
+             alt=""
+             width="6"
+             height="10"
+             >
+      </a>
+
+    </div>
+  </div>
+  <div class="page_menu">
+  <div class="wrapper">
+
+    <div class="single">
+      <a href="<?php echo get_page_link(31); ?>">
+        <p>Zobacz nasz podobny kurs:</p>
+        <h2><?php echo get_the_title(31);?></h2>
+      </a>
+    </div>
+    <div class="single">
+      <a href="<?php echo get_page_link(1445); ?>">
+        <p>Zobacz nasz podobny kurs:</p>
+        <h2><?php echo get_the_title(1445);?></h2>
+      </a>
+    </div>
+  </div>
+  </div>
+
+<?php	endif; ?>

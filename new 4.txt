@@ -1,0 +1,55 @@
+//www.googletagmanager.com
+
+G-0PNDYXB2MB
+G-Q04NLV531C
+
+
+<script type="lazyload2" data-src="{{ 'bundle-custom.js' | asset_url }}"></script>
+
+"https:\/\/obscure-escarpment-2240.herokuapp.com\/js\/best_custom_product_options.js?shop=myshopURL.myshopify.com","https:\/\/assets.cloudlift.app\/api\/assets\/upload.js?shop=myshopURL.myshopify.com"
+
+
+{{ content_for_header | remove: ',"https:\/\/cdn-bundler.nice-team.net\/app\/js\/bundler-script.js?shop=ifit-egypt.myshopify.com&1674149022" ' }}
+
+
+  <script type="lazyload2">
+	/**	Bundler script loader, version number: 2.0 */
+	(function(){
+		var loadScript=function(a,b){var c=document.createElement("script");c.type="text/javascript",c.readyState?c.onreadystatechange=function(){("loaded"==c.readyState||"complete"==c.readyState)&&(c.onreadystatechange=null,b())}:c.onload=function(){b()},c.src=a,document.getElementsByTagName("head")[0].appendChild(c)};
+		appendScriptUrl('ifit-egypt.myshopify.com');
+
+		// get script url and append timestamp of last change
+		function appendScriptUrl(shop) {
+
+			var timeStamp = Math.floor(Date.now() / (1000*1*1));
+			var timestampUrl = 'https://bundler.nice-team.net/app/shop/status/'+shop+'.js?'+timeStamp;
+
+			loadScript(timestampUrl, function() {
+				// append app script
+				if (typeof bundler_settings_updated == 'undefined') {
+					console.log('settings are undefined');
+					bundler_settings_updated = 'default-by-script';
+				}
+				var scriptUrl = "https://cdn-bundler.nice-team.net/app/js/bundler-script.js?shop="+shop+"&"+bundler_settings_updated;
+				loadScript(scriptUrl, function(){});
+			});
+		}
+	})();
+
+	var BndlrScriptAppended = true;
+	
+</script>
+
+
+0.9s
+
+1.1s
+
+1.2s
+
+
+.3s
+
+.5s
+
+.6s

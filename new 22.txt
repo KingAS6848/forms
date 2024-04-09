@@ -1,0 +1,15 @@
+?LSCWP_CTRL=before_optm
+
+
+https://pagespeed.web.dev/analysis/https-dekorium-cz/wbtkzem1yj?form_factor=mobile
+
+
+.popup-content {
+    display: none;
+}
+
+.min-footer .col-right img {
+    height: 27px;
+}
+
+id:wp-block-library

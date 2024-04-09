@@ -1,0 +1,4 @@
+.search-open .wrapper-header .search-form{
+    transform: scale(1) !important;
+    opacity: 1 !important;
+}
